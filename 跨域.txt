@@ -1,0 +1,3 @@
+xhrFields:{ withCredentials: true }
+同服务器无效
+跨域有效--且后台不允许用*号，需指定域名访问，域名非80端口要加端口号
