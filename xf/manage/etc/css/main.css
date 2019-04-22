@@ -1,0 +1,66 @@
+﻿.fm{font-family:"Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma; }
+.bodyborder{border:1px solid #cccccc;min-height:800px;}
+.bodynav{width:100%;height:30px;line-height:30px;background-color: #c1d9f3;font-size:13px;font-weight:bold;}
+.bodynav .nav{float:left;margin-left:15px;}
+.bodynav .nav .nav1{color:#015fa7;}
+.bodynav .nav .nav2{font-weight:bold;color:#666666;}
+.bodynav .navbutton{float:right;margin-right:10px;padding-top:3px;}
+/*按钮样式*/
+.btn_color{background: #ED5854;padding:0px 10px 0px 10px;height: 26px;line-height: 26px;text-align: center;color: #fff;border: none;cursor: pointer;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius:3px;font-family:"Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;}
+.btn_color1{background: #F60;padding:0px 10px 0px 10px;height: 26px;line-height: 26px;text-align: center;color: #fff;border: none;cursor: pointer;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius:3px;font-family:"Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;}
+
+.button_green2{cursor:pointer;width:40px;height:21px; border:0; background:url(../img/btn_green2.png) no-repeat; font:12px/21px "宋体"; text-align:center; color:#FFF;}
+.button_green4{cursor:pointer;width:60px;height:21px; border:0; background:url(../img/btn_green4.png) no-repeat; font:12px/21px "宋体"; text-align:center; color:#FFF;}
+.button_green6{cursor:pointer;width:80px;height:21px; border:0; background:url(../img/btn_green6.png) no-repeat; font:12px/21px "宋体"; text-align:center; color:#FFF;}
+.button_paleblue2{cursor:pointer;display: inline-block;width: 40px; height: 23px;margin: 0px 1px 0px 1px; border: 0; background: #1E9FFF;font: 400 12px/23px "宋体"; margin: 0px 0;  color: #fff; border-radius: 2px;overflow: hidden;/*搜索蓝色按钮*/ }
+.button_paleblue4 {cursor:pointer;display: inline-block;width: 56px; height: 23px;margin: 0px 1px 0px 1px; border: 0; background: #1E9FFF;font: 400 12px/23px "宋体"; margin: 0px 0;  color: #fff;border-radius: 2px;overflow: hidden;/*搜索蓝色按钮*/ }
+
+
+
+.button_paleblue6 {cursor:pointer;width: 80px; height: 23px;margin: 0px 1px 0px 1px; border: 0; background: #1E9FFF;font: 400 12px/23px "宋体"; margin: 0px 0;  color: #fff;  border-radius: 2px; overflow: hidden;/*搜索蓝色按钮*/ }
+.input_text {height: 23px;line-height:23px;padding:0px;border-top: 1px solid #797d7e;border-right: 1px solid #c2c3c7;border-bottom: 1px solid #c2c3c7;border-left: 1px solid #797d7e;}
+.input_text_reaonly {background-color: #e1e1e1;border-top: 1px solid #797d7e;border-right: 1px solid #c2c3c7;border-bottom: 1px solid #c2c3c7;border-left: 1px solid #797d7e;}
+.input_button {background-color: #e7edff;border: 1px solid #0099ff;font-size: 13px;height: 25px;line-height:25px;cursor:pointer;padding-left:5px;padding-right:5px;}
+/*form表格*/
+.box_keep1{ background-color: #FFFFFF;border-top: 1px solid #d2d2d2;border-left: 1px solid #d2d2d2;border-radius:20px;}
+.box_keep1 caption{background-color: #fffcef; text-align:left; text-indent:15px;height:30px; font: 13px/ 30px "Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;color:#6d6d6d;font-weight: bold;}
+.box_keep1 tr {height:30px}
+.box_keep1 th {border-bottom: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;padding: 2px;font-size: 12px;word-break:   break-all;text-align: right;}
+.box_keep1 td {border-bottom: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;padding: 2px;font-size: 12px;word-break:   break-all;text-align: left;}
+.box_keep1 td .inputtxt{border:#cccccc 1px solid;height:25px;line-height:25px;}
+.box_keep1 .button{width:98px;height:28px;background:#f57403;border: 1px solid #d66500;color:#FFFFFF;font-weight:bold;cursor:pointer;}
+
+.box_keep {width: 100%;margin: 10px 0}
+.box_keep thead tr {background-color: #f2f2f2}
+.box_keep td {padding: 6px 10px;min-height: 20px;line-height: 20px;border: 1px solid #d2d2d2;font-size: 14px;font-weight: 400;} 
+.box_keep th {padding: 6px 10px;min-height: 20px;line-height: 20px;border: 1px solid #d2d2d2;font-size: 14px;font-weight: 400;}
+.box_keep th {padding: 10px;background: #fbfbfb;}
+.box_keep tr {background-color: #fff}
+
+
+
+.grid_list_bak{ background-color: #FFFFFF;border-left: 1px solid #d2d2d2;border-top: 1px solid #d2d2d2;margin-top:0px;}
+.grid_list_bak caption{background-color: #fffcef;height:30px; font: 13px/ 30px "Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;color:#6d6d6d;font-weight: bold;}
+.grid_list_bak caption div{border: 1px solid #ADDAF7;font-size: 13px;text-align: left;text-indent: 5px;line-height: 25px;padding:5px;}
+.grid_list_bak tr {height:25px;}
+.grid_list_bak th{border-bottom:1px solid #d2d2d2;border-right: 1px solid #d2d2d2;font-size: 12px;padding: 2px;background:#eaf3fc; color:#000;font-family:"Microsoft YaHei";}
+.grid_list_bak td{border-bottom: 1px solid #d2d2d2;border-right: 1px solid #d2d2d2;padding:2px;font-size:12px; color:#666;}
+
+.grid_list {width: 100%;margin: 10px 0}
+.grid_list thead tr {background-color: #f2f2f2}
+.grid_list td, .grid_list th {padding: 6px 10px;min-height: 20px;line-height: 20px;border: 1px solid #d2d2d2;font-size: 14px;font-weight: 400;}
+.grid_list th {padding: 10px;background: #fbfbfb;}
+.grid_list tr {background-color: #fff}
+
+/*上传ul*/
+.upload{}
+.upload li{float:left;line-height:35px;}
+
+/*分页*/
+.pageb{list-style:none;margin:0px;margin-top:5px;padding:0px;}
+.pageb li{float:left;list-style:none;margin:0px;padding:0px;}
+.pageb .page_point_current{cursor:pointer; color:#FFFFFF;margin:2px;background:#ff4400;  border:1px solid #fe4500;min-width:25px;height:22px;line-height:22px;font:14px;display:inline-block;text-align:center;vertical-align:middle;}
+.pageb .page_point        {cursor:pointer; color:#000000;margin:2px;background:#FFF;     border:1px solid #dfdfdf;min-width:25px;height:22px;line-height:22px;font:14px;display:inline-block;text-align:center;vertical-align:middle;}
+.pageb .page_point:hover  {cursor:pointer; color:#f00;   margin:2px;background:#FFF;     border:1px solid #fe4500;min-width:25px;height:22px;line-height:22px;font:14px;display:inline-block;text-align:center;vertical-align:middle;}
+.pageb .page-num{text-align: center;width:25px;height:20px;border: 1px solid #dfdfdf;border-right:0px; margin:2px 0px 2px 2px;display:inline-block;line-height:20px; text-align:center;}
+.pageb .page-num-button{cursor:pointer;font-size:12px;color:#fff;background:#f40;min-width:30px;height:24px; text-align:center;border: 1px solid #dfdfdf;border-left:0px;margin:2px 2px 2px 0px;}

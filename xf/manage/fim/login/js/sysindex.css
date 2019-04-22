@@ -1,0 +1,35 @@
+body {padding:0px;margin:0px;overflow-x:hidden;overflow-y:hidden;}
+/*
+.l-layout-left .l-layout-header{display:none;}
+.l-layout-center .l-layout-header{display:none;}
+.l-layout-left,.l-layout-center, .l-layout-top, .l-layout-bottom{border: 0!important}
+*/
+.systop{background: url(img/top_line.gif) repeat-x;height: 69px; }
+.systop .left{float: left;height: 67px;;}
+.systop .left ul {float: left;margin: 0;padding: 0;list-style-type: none;}
+
+.systop .left li {float: left;width:77px;text-align:center; height:68px; background:url(img/top_line.gif) no-repeat left top;}
+.systop .left li i{display:block;margin-top:13px;height:25px; line-height:25px;color: #ffffff;}
+.systop .left li a{display:block;margin:6px 0px 12px 0px;height:12px; line-height:12px;color: #ffffff;text-decoration: none;}
+.systop .left li:hover{background:#fa8621;cursor:pointer;}
+
+
+.systop .right{float: right; padding: 20px 20px 0px 0px; color:#FFFFFF;}
+.systop .right a{color:#FFFFFF;text-decoration: none;}
+
+
+
+
+
+#left{}
+#left .smallmenu{margin:5px 0 0 5px;}
+#left .smallmenu .hd{width:185px;height:25px;line-height: 25px;background:url(img/lanmu_bg1.gif) no-repeat;}
+#left .smallmenu .bd{width:183px;border: 1px solid #FFFFFF;border-top:0;line-height: 25px;background:#D6DFF7;}
+#left .logininfo{margin:5px 0 0 5px;}
+#left .logininfo .hd{width:185px;height:25px;line-height: 25px;background:url(img/admin_left_9.gif) no-repeat;}
+#left .logininfo .bd{width:183px;border: 1px solid #FFFFFF;border-top:0;line-height: 25px;background:#D6DFF7;}
+#left .logininfo .bd ul{margin-left:5px;}
+
+
+
+

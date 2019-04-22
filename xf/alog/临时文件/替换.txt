@@ -1,0 +1,53 @@
+var areaId                        = $("#areaId").attr("areaIdValue");
+ 
+<form  id="myform" class="alert_info">
+<input name="buildingName"  placeholder="请输入建筑名称" class="hmui-input"/>
+<input type="button" value="搜索" class="hmui-btn" id="btn_search"/>
+
+<div id="pageNav"></div>
+
+//查询处理=======================
+$("#btn_search").bind("click", function(){
+	search();
+});
+search();
+function search(){
+	
+	var params=$("#myform").serialize()	;
+	if(params!="")params+="&";
+	params+="uri=owner_departments";
+	var url=rootPath+"/com/base/InterfaceGetAction.php";
+	gridpage({url:url
+				,param:params			                                                
+				,bodyid:"tbody_content"                                                        
+				,pagenavid:"pageNav"                                                            
+				,single:false  
+				,showType:1
+				,length:2
+				,store:processData                                                                                 
+	});         
+}
+function processData(resultobj){
+	//$("#pageNav").parent().after(JSON.stringify(resultobj));
+	
+	 // var resultobj=eval("("+responseText+")");
+ 	                                                                
+	return content;  
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

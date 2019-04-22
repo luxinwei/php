@@ -1,0 +1,25 @@
+body,td,th {font-size: 12px;}
+body,form {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;}
+.logintop{width:1200px;margin:auto;marin-top:30px; }
+.logintop table{width:800px;margin:auto;height:100px;float:left;}
+.logintop table .title{font-size:28px;margin-left:20px;}
+.login_top_bg_out{background-image: url(img/login_top_bg_out.gif);background-repeat: repeat-x;height: 142px;}
+.login_top_bg {background-image: url(img/login_top_bg.gif);background-repeat: repeat-x;background-position: center;height: 142px;}
+.login_center_bg{margin:auto;height: 440px;background:url(img/dangjian/login_banner_bg.jpg) no-repeat top center;}
+
+
+.loginbg{background:url(img/dangjian/login_bg.png);width: 310px;height: 401px;overflow:hidden;float:right;margin-top:18px;}
+.loginbg table{}
+.loginbg table td{padding:5px;font-size: 14px;}
+.login_table_text{line-height: 35px;font-size: 14px;}
+}
+
+
+.logintxt3 {border: 1px solid #98999b;width: 152px;height: 22px;line-height: 22px;font-weight: bold;font-size: 14px;}
+.logintxt1 {border: 1px solid #98999b;width: 90px;height: 22px;line-height: 22px;font-weight: bold;font-size: 14px;}
+.maskimg {border: 1px solid #98999b;width: 58px;height: 22px;margin-left: 2px;}
+
+.layui-btn-normal {background-color: #fb3333;font-size: 16px;font-weight: bold;}
+
+
+.logintxt {margin:0px; background-color: #fff;  border: 1px solid rgba(0, 0, 0, 0.2); color: #171717; outline: 0; height: 35px; padding: 0px 12px; line-height: 33px; font-size: 14px; font-weight: normal; vertical-align: middle; min-height: 35px; -webkit-transition: all 0.12s ease; -o-transition: all 0.12s ease; transition: all 0.12s ease; -webkit-box-shadow: none; box-shadow: none; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; -webkit-transition: background 0.2s linear 0s; -o-transition: background 0.2s linear 0s; transition: background 0.2s linear 0s; }

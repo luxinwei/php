@@ -1,0 +1,13 @@
+body,td,th {font-size: 12px;}
+body,form {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;}
+.login_top_bg_out{background-image: url(img/login_top_bg_out.gif);background-repeat: repeat-x;height: 142px;}
+.login_top_bg {background-image: url(img/login_top_bg.gif);background-repeat: repeat-x;background-position: center;height: 142px;}
+.login_center_bg{margin:auto;height: 408px;width: 913px;background:url(img/login_center_bg.jpg) no-repeat top center;}
+.login_table{margin-top: 80px;margin-right: 28px;}
+.login_table_text{width: 61px;padding-left: 25px;}
+}
+
+
+.logintxt {border: 1px solid #98999b;width: 152px;height: 22px;line-height: 22px;font-weight: bold;font-size: 14px;}
+.logintxt1 {border: 1px solid #98999b;width: 90px;height: 22px;line-height: 22px;font-weight: bold;font-size: 14px;}
+.maskimg {border: 1px solid #98999b;width: 58px;height: 22px;margin-left: 2px;}

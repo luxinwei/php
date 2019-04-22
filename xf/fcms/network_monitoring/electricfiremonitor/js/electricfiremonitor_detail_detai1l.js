@@ -1,0 +1,1 @@
+$("#btn_history").bind("click", function(){parent.location.href="electricfiremonitor_list.php?m="+m;});

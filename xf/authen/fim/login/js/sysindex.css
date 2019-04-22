@@ -1,0 +1,53 @@
+body {padding:0px;margin:0px;overflow-x:hidden;overflow-y__:hidden;}
+.l-layout-left .l-layout-header{display:none;}
+.l-layout-center .l-layout-header{display:block;}
+.l-layout-left,.l-layout-center, .l-layout-top, .l-layout-bottom{border: 0!important}
+.l-layout-collapse-left_____________{background: #4078f2;border: 0px solid #B8D0D6;left:0px;}
+.l-layout-collapse-left{background:url(img/iframe_change_bg.gif) repeat;width:9px;border: 0px solid #B8D0D6;left:0px;}
+
+
+
+
+.l-layout-center .l-layout-header {
+    position: relative;
+    padding-left: 10px;
+    color:#535b6c;
+    height: 50px;
+    line-height: 50px;
+   background:#FFFFFF ;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight:normal;
+    font-size:16px;
+    box-shadow:0 4px 6px 0px rgba(176,206,250,0.6) !important;
+    z-index:99;
+}
+
+
+
+
+#collapseleft{background:url(img/iframe_change_bg.gif) repeat;width:9px;float:left;}
+
+.systop{background: url(img/header.png) repeat-x;height: 80px; }
+.systop .left{float: left;height: 78px;;}
+.systop .left .logo {background: #4078f2;width: 220px;height: 34px;padding: 23px 0;float: left;}
+.systop .left .logo  img {margin: 0 auto;display: block;width: 117px;}
+
+.systop .left .title{
+    float: left;
+    color: #FFFFFF;
+    line-height: 80px;
+    font-size: 20px;
+    margin-left: 24px;
+}
+.systop .right{float: right;  color:#FFFFFF;width:254px;margin-right: 55px;}
+.systop .right a{color:#FFFFFF;text-decoration: none;}
+.systop .right .admin {font-size: 18px;color: #FFFFFF;line-height: 80px;float: left;}
+.systop .right .portrait {float: left;margin-left: 20px;}
+.systop .right .portrait img {width: 56px;height: 56px;margin-top: 12px;}
+.systop .right .icon-down {float: left;margin: 28px 0 0 20px;}
+
+
+
+
+

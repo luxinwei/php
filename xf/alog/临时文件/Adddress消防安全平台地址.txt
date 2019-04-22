@@ -1,0 +1,36 @@
+http://39.106.249.101/xf/authen/fim/login/login.php
+
+
+http://hls.open.ys7.com/openlive/4cc4241cfb1e4bde8b2b51a6c35262b3.m3u8
+http://hls.open.ys7.com/openlive/0f290436eefc4952b323ea8cfa98298b.m3u8
+ 
+
+
+description":"7777","
+filePath":"http://gd-ca.oss-cn-beijing.aliyuncs.com/test/dpi/80dcb6f599c947929b2355b848508ea7.png","id":32,"name":"7777","type":"2"}
+
+
+
+train/percent_of_pass
+
+train/list
+
+
+        var resultobj=eval("("+responseText+")");
+        var data = resultobj["data"];
+        var datax="";
+        var datay="";	
+        var datay1="";	
+        var datay2="";	
+        
+        for(var key in data){ 
+      
+           if(datax!="")datax+=",";
+           if(datay!="")datay+=",";
+           if(datay1!="")datay1+=",";
+           if(datay2!="")datay2+=",";
+           datax+=key;
+           datay+=data[key];
+           datay1 +=  data[key].defectCount;
+    		datay2 += data[key].treatmentCount;
+        }  

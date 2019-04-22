@@ -1,0 +1,125 @@
+.ext_button_add {
+	background-image: url(defaultimg/page_add.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_edit {
+	background-image: url(defaultimg/page_edit.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_del {
+	background-image: url(defaultimg/page_delete.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_list {
+	background-image: url(defaultimg/page_find.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_list_height {
+	background-image: url(defaultimg/page_find_height.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_go {
+	background-image: url(defaultimg/page_go.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_link {
+	background-image: url(defaultimg/page_link.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_config {
+	background-image: url(defaultimg/page_gear.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_modifypwd {
+	background-image: url(defaultimg/page_key.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_help {
+	background-image: url(defaultimg/help.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+/*≈≈–Ú*/
+.ext_button_top {
+	background-image: url(defaultimg/top.gif) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_up {
+	background-image: url(defaultimg/up.gif) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_down {
+	background-image: url(defaultimg/down.gif) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_bottom {
+	background-image: url(defaultimg/bottom.gif) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_save {
+	background-image: url(defaultimg/save.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_page_refresh {
+	background-image: url(defaultimg/page_refresh.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_check {
+	background-image: url(defaultimg/check.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_tj {
+	background-image: url(defaultimg/tj.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_char_line {
+	background-image: url(defaultimg/chart_line.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_view {
+	background-image: url(defaultimg/application_view_tile.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.ext_button_order {
+	background-image: url(defaultimg/order.png) !important;
+	background-repeat: no-repeat;
+	background-position: left center;
+}

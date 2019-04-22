@@ -1,0 +1,28 @@
+
+	
+	/* .login-main .login-operation{float: right;width:360px;height:410px;background:rgba(202,218,255,0.8);margin-top:40px;box-shadow:4px 4px 4px rgba(176,206,250,0.27)}	
+	.login-main .login-operation h2{text-align: center;color:#535b6c;margin-top:20px;font-weight:normal;font-size:28px}
+ */
+	
+	.login_action_con{margin-top:40px}
+	.login_action_con table{}
+	.login_action_con table tr{}
+	.login_action_con table th{font-size:16px;display:inline-block;width:60px;margin:12px auto;float:right;color:#626c81}
+	.login_action_con table td{margin:12px auto;}
+	.login_action_con table td input{border:1px solid #cadaff;background:#f0f3fa;padding-left:5px;color:#000000;}
+	.login_action_con table td input:focus{border:1px solid #4877e8}
+    .login_action_con table td ul{}
+    .login_action_con table td ul li{float:left;}
+
+	#login_btn{border:0;height:44px;width:312px;margin:20px auto;background:#5b8cff;font-size:16px;color:#FFFFFF;border-radius:5px;display: block;cursor:pointer}
+	#login_btn:hover{background:#4877e8}
+	
+	
+	
+	
+	.login-header{margin:50px auto;width:1000px}
+	.login-header .logoing img{display: block}
+	
+	
+	.login-operation{width:360px;height:380px;background:#fff;margin:200px auto;box-shadow:4px 4px 4px rgba(0,0,0,0.1);padding:20px;border-radius:5px}	
+	.login-operation h2{text-align: center;color:#535b6c;font-weight:normal;font-size:28px;margin-top:-20px}

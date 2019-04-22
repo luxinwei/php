@@ -1,0 +1,4 @@
+formvalidation_error_1{top: 50%;margin-top: -85px;margin-left:15%; display:none;z-index: 1051; position: fixed;width: 70%;height: auto;background-color:#04BE02;border-radius: 12px;}*/
+
+.formvalidation_error_1 p{width: 90%;padding-left:15px;padding-right:15px;padding-bottom:15px;padding-top:52px;text-align:center;font-size: 16px;color: #fff;line-height: 25px}
+.formvalidation_error-ico{position: absolute;top: 12px;left:45%;display: block;width:30px;height: 30px;background-size: 100% 100%;background-image: url(../img/warning.png); }
