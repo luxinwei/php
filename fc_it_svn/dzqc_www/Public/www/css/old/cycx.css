@@ -1,0 +1,59 @@
+/* CSS Document */
+.cycx{border:1px #d6d7d6 solid;width:1080px;margin:0px auto;min-height:600px;background:#FFF}
+.cycx h2{color:#000;text-indent:15px;line-height:50px; font-family:"微软雅黑";
+font-weight:normal;font-size:18px;}
+.cycx1{width:1050px;margin:0px auto;border-top:1px #edefee solid;height:183px;}
+.cycx2{background:url(../images/zan.png) no-repeat 0 center;width:80px;display:block;float:left;
+height:70px;text-indent:25px;color:#FFF}
+.cycx3{line-height:70px;color:#050505;font-size:18px;}
+.cycx4{color:#777777;line-height:25px;}
+.cycx5{color:#000;line-height:40px}
+.cycx5 span{color:#09ba08;margin-left:15px}
+/*分页*/
+.rw14{width:980px;margin:40px auto;height:30px}
+.rw14 ul{width:100%}
+.rw14 ul li{float:left;line-height:30px;height:30px;width:30px;border-radius:3px
+;background:#e3e8e4;margin-left:10px;text-align:center}
+.rw14 ul li a{color:#000;display:block}
+.rw14 ul li a:hover{background:#09ba08}
+.pre{width:100px !important;display:block;margin-right:40px !important;}
+.next{width:100px !important;background:#e3e8e4;display:block;
+float:right !important;}
+.ron3{background:#09ba08}
+/*任务详情*/
+.cxxq{width:1080px;height:66px;line-height:66px;margin:0px auto}
+.cxxq a{line-height:66px;margin-right:10px;color:#bebebe}
+.cxxq1{border:1px #d4d8d5 solid;width:1080px;min-height:770px;margin:0px auto;background:#FFF;
+margin-bottom:30px}
+.cxxq1 h3{color:#000;line-height:40px;text-indent:20px;}
+.cxxq3{width:1050px;margin:0px auto;}
+.cxxq2{height:46px;line-height:42px;width:100%;}
+.cxxq2 img {float:left;width:46px;height:46px;margin-right:10px}
+.cxxq2 span{color:#09ba08;}
+.cxxq4{line-height:25px;margin:20px auto;width:1030px;;border-bottom:1px #eaedeb solid;
+padding-bottom:40px;}
+.cxxq4 p{margin-left:3px}
+.cxxq5{text-align:center}
+.cxxq6{background:url(../images/zanq.png) no-repeat;height:65px;width:65px;display:block;
+margin-left:490px;margin-top:20px}
+.cxxq6:visited{background:url(../images/zanh.png) no-repeat;}
+.cxxq6:hover{background:url(../images/zanh.png) no-repeat;}
+/*个人简历*/
+.grjl{border:1px #d4d8d5 solid;width:1080px;min-height:660px;margin:0px auto;
+margin-bottom:30px}
+.grjl2{height:210px;margin-left:32px;float:left;margin-right:35px}
+.grjl3{line-height:40px;font-size:18px; font-family:"微软雅黑";color:#1d8320;text-indent:5px}
+.grjl4{background:#c5ebc6;height:166px;width:466px;}
+.grjl4 dt{float:left;height:166px;width:125px}
+.grjl4 dt img{margin-top:25px;height:110px;width:110px;margin-left:15px}
+.grjl4 dd{float:left;width:320px;line-height:36px;color:#000;margin-top:25px;
+margin-left:20px;font-weight:bold}
+.grjl5{background:#c3ecf3;height:166px;width:466px;line-height:35px;color:#000;
+font-weight:bold;overflow:hidden}
+.grjl6{margin-left:25px;height:150px;margin-top:15px;width:440px;}
+.grjl7{width:1000px;line-height:50px;color:#000;font-weight:bold;margin-left:32px;
+text-indent:5px}
+.grjl8{width:1000px;line-height:50px;color:#000;font-weight:bold;margin-left:32px;
+background:#114f79;height:50px;color:#FFF;text-indent:5px}
+.grjl9{background:#d7e5e4;height:240px;width:1000px;margin-left:32px;line-height:35px;overflow:hidden}
+.grjl9 p{width:960px;margin:0px auto;margin-top:20px}

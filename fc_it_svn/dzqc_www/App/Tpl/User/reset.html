@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld"  />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>忘记密码--重置密码</title>
+<meta content="">
+<meta content="" name="keywords">
+
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+
+
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/zc.css"/>
+</head>
+
+<body id="login_bg">
+<div class="login_wrapper">
+		<div class="login_header">
+        	<a href="h/"><img src="__PUBLIC__/www/img/login.png" width="285" height="62" alt="招聘" /></a>
+            <div id="cloud_s"><img src="__PUBLIC__/www/img/cloud_s.png" width="81" height="52" alt="cloud" /></div>
+            <div id="cloud_m"><img src="__PUBLIC__/www/img/cloud_m.png" width="136" height="95"  alt="cloud" /></div>
+        </div>
+        <div class="login_box">
+        <ul class="wj2">
+<li class="wj3" style="color:#adadad">1.验证账户</li>
+<li class="wj4" style="color:#333333">2.重置密码</li>
+</ul>
+<form action="{:U('User/resetPwdAct')}" method="post" id="form" name="form">
+<ul class="wj5">
+<li class="wj6"><input type="text" name="password" value="请设置新密码" id="password" onfocus="if(value=='请设置新密码'){value=''}" onblur="if(value==''){value='请设置新密码'}" /></li>
+<li class="wj9"><input type="text" name="repassword" value="请确认新密码" id="repassword" onfocus="if(value=='请确认新密码'){value=''}" onblur="if(value==''){value='请确认新密码'}" /></li>
+<li class="wj8"><input type="submit" name="submit" value="完成" /></li>
+</ul></form>
+    </div>
+   
+</div>
+</body>
+</html>

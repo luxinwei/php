@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_work_comment"
+        style="@style/tvButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="@string/work_comment"
+        android:visibility="gone" />
+    
+     <TextView
+        android:id="@+id/tv_apply_work"
+        style="@style/tvButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="@string/work_apply"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tv_apply_exit"
+        style="@style/tvButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="@string/work_exit"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/li_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_agree_exit"
+            style="@style/tvButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/user_login_btn"
+            android:text="@string/work_exit" />
+
+        <TextView
+            android:id="@+id/tv_agree_ready"
+            style="@style/tvButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ready"
+            android:text="@string/work_ready" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_refuse_inFile"
+        style="@style/tvButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_infile"
+        android:text="@string/work_infile"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_doing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+        
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/work_progress" 
+             android:layout_centerVertical="true"
+            style="@style/tvPregressStyle"/>
+        
+        <ProgressBar
+            android:id="@+id/pd_day"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_progress_SumDay"
+            android:layout_toRightOf="@id/tv_progress"
+            android:layout_centerVertical="true"
+            android:progress="80" 
+            android:progressDrawable="@drawable/progressbar_horizontal_style"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView
+            android:id="@+id/tv_progress_SumDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="共10天" 
+             android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            style="@style/tvPregressStyle"/>
+        
+         <TextView
+            android:id="@+id/tv_progress_leaveDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+            android:textSize="@dimen/T7_14"
+            android:textColor="@color/GRB18"
+            android:text="还剩2天" />
+    </RelativeLayout>
+
+</LinearLayout>

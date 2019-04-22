@@ -1,0 +1,11 @@
+$(function(){
+	$("#checkbox").click(function(){
+		if(!$("#checkbox").is(":checked")){
+			$("#submit").attr("disabled",true);
+			$("#submit").css("background",'gray');
+		}else{
+			$("#submit").attr("disabled",false);
+			$("#submit").css("background",'#85DD84');
+		}
+	});
+})

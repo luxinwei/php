@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>User Account - Bootstrap Admin</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    
+    <link href="__PUBLIC__/www/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/font-awesome.css" rel="stylesheet" />
+    
+    <link href="__PUBLIC__/www/css/adminia.css" rel="stylesheet" /> 
+    <link href="__PUBLIC__/www/css/adminia-responsive.css" rel="stylesheet" /> 
+    
+    
+    <link href="__PUBLIC__/www/css/pages/plans.css" rel="stylesheet" /> 
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+<include file="Common:header" />
+			
+		
+			<include file="Common:left" />
+			
+			
+			
+			<div class="span9">
+				
+				<h1 class="page-title">
+					<i class="icon-th-large"></i>
+					我的任务<a href="" class="fb">发布</a>					
+				</h1>
+				
+				
+				<div class="row">
+					
+					<div class="span9">
+				
+						<div class="widget">
+							
+							<div class="widget-header">
+								<h3>我的任务</h3>
+							</div> <!-- /widget-header -->
+                          <div class="widget-content">
+							<ul class="rwgl7">
+<li class="rwsl1">{$taskData['title']}</li>
+<li class="rwsl2">发布者:<span>{$taskData['publisherData']['companyname']}</span></li>
+<li class="rwsl2">酬劳:<span>￥{$taskData['pay_money']}</span></li>
+<li class="rwsl2">已有{$taskData['join_number']}人申请任务</li>
+<li>任务周期：{$taskData['work_days']}天</li>
+<li class="rwsl3">
+<img src="__PUBLIC__/www/img/rwsq.png" width="500px"/>
+</li>
+</ul>
+
+<ul style="float:right">
+<img src="__PUBLIC__/www/img/rwjs.png" />
+</ul>
+</div>
+<br />
+<div class="widget-content">
+<ul class="rwsl5">
+<li class="rwsl6">需求描述</li>
+<li>任务内容简介：</li>
+<li>{$taskData['content']}</li>
+<!--<li>2.负责数据库相关接口的开发/维护</li>
+<li>3.负责数据库的优化/管理</li>
+<li>任务能力要求：</li>
+<li>1.计算机或相关专业</li>
+<li>2.至少熟悉一种关系型数据库(Orcle/Mysql/postgreSQL)；</li>
+<li>3.精通SQL语句编写，存储过程。</li>
+--><Li class="rwsl7">附件</Li>
+<volist name="taskData['fileList']['rows']" id="vo">
+	{$vo['fname']}&nbsp;&nbsp;&nbsp;<a href="{$vo['download_url']}" target="_blank">下载</a>
+	</volist>
+</ul>
+</div>
+<br />
+<div class="widget-content">
+<h2>评论信息</h2>
+<volist name="commentList['rows']" id="vv" offset="0" length="4" >
+  <div class="rwjs">
+  <ul>
+  <li class="rwjs1"><img src="http://7xuiva.com1.z0.glb.clouddn.com/{$vv['user_data']['avatar']}" /></li>
+  <li class="rwjs2">
+  <dt>{$vv.realname} <span>{$vv.addtime|date="Y-m-d",###}</span></dt>
+  <dd>{$vv.content}</dd>
+  </li>
+  </ul>
+  </div>
+</volist>
+  
+</div>
+						</div> <!-- /widget -->
+						
+					</div> <!-- /span9 -->
+					
+				</div> <!-- /row -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+<include file="Common:footer" />
+
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/www/js/jquery-1.7.2.min.js"></script>
+
+
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+
+  </body>
+</html>

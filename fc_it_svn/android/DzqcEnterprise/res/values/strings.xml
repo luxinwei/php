@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">zdqc</string>
+    <string name="app_display_name">企业版app</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="again_to_exit">再按一次返回键退出</string>
+    <string name="back_string">返回</string>
+    <string name="bottommenu_index">推荐</string>
+    <string name="bottommenu_serve">任务</string>
+    <string name="bottommenu_mine">我的</string>
+    <string name="today_format">HH:mm</string>
+    <string name="yesterday_format">昨天</string>
+    <string name="date_format">yy/MM/dd</string>
+    <string name="talk_today_format">HH:mm</string>
+    <string name="talk_yesterday_format">昨天 HH:mm</string>
+    <string name="talk_date_format">yy/MM/dd HH:mm</string>
+    <string name="scan_desc_string">将二维码放入方框扫描</string>
+    <string name="scan_title_string">扫描</string>
+    <string name="cancel">取消</string>
+    <string name="network_error">网络连接失败，请检查网络</string>
+
+    <!-- dialog提示信息 -->
+    <string name="alert_complete">已完成</string>
+    <string name="alert_loading">加载中</string>
+    <string name="alert_telephone_exist">手机号已被注册请登录</string>
+    <string name="alert_telephone_empty">手机号为空</string>
+    <string name="alert_user_pwd_empty">用户名或密码不能为空</string>
+    <string name="alert_pwd_noequal">密码输入不一致</string>
+    <string name="alert_no_empty">请输入有效值</string>
+    <string name="alert_valicode_noeffect">验证码已失效</string>
+
+    <!-- Header信息 -->
+    <string name="header_forget_pwd">忘记密码</string>
+    <string name="header_resetting_pwd">重置密码</string>
+
+    <!-- 学生端登录信息 -->
+    <string name="user_name_hint">请输入电话号码/用户名</string>
+    <string name="user_pwd_hint">请输入密码</string>
+    <string name="user_login">登录</string>
+    <string name="user_forget_pwd">忘记密码？</string>
+    <string name="user_register_forward">注册</string>
+
+    <!-- 学生端注册信息 -->
+    <string name="user_register">注册</string>
+    <string name="user_register_success">注册成功</string>
+    <string name="user_register_phone_hint">请输入你的手机号</string>
+    <string name="user_register_setting_pwd">请设置你的密码</string>
+    <string name="user_register_confirm_pwd">请确认你的密码</string>
+
+    <!-- 学生端忘记密码 -->
+    <string name="forget_pwd_step_next">下一步</string>
+    <string name="forget_pwd_complete">完成</string>
+    <string name="forget_resetting_pwd_hint">请设置新密码</string>
+    <string name="forget_comfirm_pwd_hint">请确认新密码</string>
+
+    <!-- 企业端登录信息 -->
+    <string name="enter_user_name_hint">请输入邮箱/用户名</string>
+    <!-- 企业端忘记密码 -->
+    <string name="enter_forget_pwd_confirm">确定</string>
+    <string name="enter_forget_pwd_email">发送邮件</string>
+    <string name="enter_forget_pwd_email_hint">请输入你的注册邮箱</string>
+    <!-- 企业端注册信息 -->
+    <string name="enter_register_email_hint">请输入你要注册的邮箱</string>
+
+    <!-- 企业端认证 -->
+    <string name="certificate_cancer">跳过</string>
+    <string name="certification_company_title">企业认证</string>
+    <string name="certification_company_name">公&#160;&#160;&#160;&#160;司&#160;&#160;&#160;&#160;名&#160;&#160;&#160;&#160;称</string>
+    <string name="certification_company_no">营业执照注册号</string>
+    <string name="certification_company_money">注&#160;&#160;&#160;&#160;册&#160;&#160;&#160;&#160;资&#160;&#160;&#160;&#160;金</string>
+    <string name="certification_company_faren_name">法定代表人姓名</string>
+    <string name="certification_company_check">主&#160;&#160;&#160;&#160;体&#160;&#160;&#160;&#160;验&#160;&#160;&#160;&#160;证</string>
+    <string name="cerification_click_check">点击验证</string>
+    <string name="certification_company_name_hint">例如：北京打造前程教育投资公司</string>
+    <string name="certification_company_no_hint">例如：111025664587784</string>
+    <string name="certification_company_money_hint">例如：5000万</string>
+    <string name="certification_company_faren_name_hint">例如：张苗苗</string>
+    <string name="certification_industry">选&#160;&#160;&#160;&#160;择&#160;&#160;&#160;&#160;行&#160;&#160;&#160;&#160;业</string>
+    <string name="certification_company_location">总&#160;&#160;部&#160;&#160;所&#160;&#160;在&#160;&#160;地</string>
+    <string name="certification_company_owner_no">运营者身份证号</string>
+    <string name="certification_company_owner_name">运营者真实名字</string>
+    <string name="certification_check_code">输&#160;&#160;入&#160;&#160;验&#160;&#160;证&#160;&#160;码</string>
+    <string name="certification_send_code">发送验证码</string>
+    <string name="certification_company_location_hint">例如：河南省郑州市金水东路黄河南路</string>
+    <string name="certification_company_owner_no_hint">例如：110235195602362565</string>
+    <string name="certification_company_owner_name_hint">例如：前进</string>
+    <string name="certification_check_code_hint">例如：265895</string>
+    <string name="certification_send_code_hint">请填写运营者手机号</string>
+    <string name="certification_company_photo_upload">营业执照上传</string>
+    <string name="certification_company_owner_photo_upload">运营者身份证上传</string>
+    <string name="certification_company_sign">上传合作盖章协议</string>
+    <string name="certification_step_next">下一步</string>
+    <string name="certification_submit">提 交</string>
+    <string name="certification_runPhone">运营者手机号码</string>
+    <string name="certification_runPhoto">营业执照</string>
+    <string name="certification_cardPhoto">运营者身份证</string>
+    <string name="certification_signPhoto">合作盖章协议</string>
+    <string name="certificate_result_info">你已成功发送实名认证请求\n我们会在2~5个工作日进行审核</string>
+    <string name="certificate_result_submit">确定</string>
+    <string name="email_send_error">邮件发送异常</string>
+    <string name="email_send_empty">邮箱不能为空</string>
+
+    <!-- popwindow -->
+    <string name="certificate_popwindow_camera">拍照</string>
+    <string name="certificate_popwindow_photos">从相册中选择</string>
+    <string name="certificate_popwindow_cancer">取消</string>
+    <string name="certificate_popwindow_error">你的认证审核未通过，请再次填写并提交。</string>
+
+    <!-- 我的 -->
+    <string name="mine_worked">已发布任务</string>
+    <string name="mine_working">进行中任务</string>
+    <string name="mine_work_over">已结束任务</string>
+    <string name="mine_message">消息</string>
+    <string name="mine_money">充值</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_help">帮助与反馈</string>
+
+    <!-- 任务 -->
+    <!-- 任务 -->
+    <string name="work_enterprise">企业</string>
+    <string name="work_detail_title">任务详情</string>
+    <string name="work_publish_person">发布者：</string>
+    <string name="work_publish_date">时间：</string>
+    <string name="work_publish_introduction">任务内容简介：</string>
+    <string name="work_publish_enable_request">任务能力要求：</string>
+    <string name="work_publish_file">附件：</string>
+    <string name="work_publish_seeAll">查看全部</string>
+    <string name="work_resend">重新推送</string>
+    <string name="work_send_limit">推送范围</string>
+    <string name="work_school_check">学校选择</string>
+    <string name="work_school_already">已选学校</string>
+    <string name="work_major_check">专业选择</string>
+    <string name="work_major_already">已选专业</string>
+    <string name="work_grade_check">级别选择</string>
+    <string name="work_grade_already">已选级别</string>
+    <string name="work_publish_title">发布</string>
+    <string name="work_publish_ads">发布说明</string>
+    <string name="work_publish_loadfile">上传附件</string>
+    <string name="work_publish_title_hint">请输入发布的标题</string>
+    <string name="work_publish_content_hint">请简要说明</string>
+    <string name="work_date">任务周期</string>
+    <string name="work_money">任务酬劳</string>
+    <string name="work_paytype">支付方式</string>
+    <string name="work_sendAccount">推送人数</string>
+<string name="work_begin">开始任务</string>
+<string name="work_end">结束任务</string>
+</resources>

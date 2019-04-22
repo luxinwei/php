@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>User Account - Bootstrap Admin</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    
+    <link href="__PUBLIC__/www/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/font-awesome.css" rel="stylesheet" />
+    
+    <link href="__PUBLIC__/www/css/adminia.css" rel="stylesheet" /> 
+    <link href="__PUBLIC__/www/css/adminia-responsive.css" rel="stylesheet" /> 
+    
+    
+    <link href="__PUBLIC__/www/css/pages/plans.css" rel="stylesheet" /> 
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+<body>
+	<include file="Common:header" />
+			
+		
+			<include file="Common:left" />
+			
+
+			
+			
+			
+			<div class="span9">
+				
+				<h1 class="page-title">
+					<i class="icon-th-large"></i>
+					我的任务<a href="" class="fb">发布</a>					
+				</h1>
+				
+				
+				<div class="row">
+					
+					<div class="span9">
+				
+						<div class="widget">
+							
+							<div class="widget-header">
+								<h3>我的任务</h3>
+							</div> <!-- /widget-header -->
+                          <div class="widget-content">
+							<ul class="rwgl7">
+<li class="rwsl1">{$taskData['title']}</li>
+<li class="rwsl2">发布者:<span>{$taskData['publisherData']['companyname']}</span></li>
+<li class="rwsl2">酬劳:<span>￥{$taskData['pay_money']}</span></li>
+<li class="rwsl2">已有{$taskData['join_number']}人申请任务</li>
+<li>任务周期：{$taskData['work_days']}天</li>
+<li class="rwsl3">
+<img src="__PUBLIC__/www/img/rwsq.png" width="500px"/>
+</li>
+</ul>
+<ul style="float:right">
+<img src="__PUBLIC__/www/img/jxz.png" />
+<a href="{:U('Task/endMyTask',array('id'=>$taskData['id']))}" class="ks"  >结束任务</a>
+</ul>
+</div>
+<br />
+<div class="widget-content">
+<ul class="rwsl5">
+<li class="rwsl6">需求描述</li>
+<li>任务内容简介：</li>
+<li>{$taskData['content']}</li>
+<!--<li>2.负责数据库相关接口的开发/维护</li>
+<li>3.负责数据库的优化/管理</li>
+<li>任务能力要求：</li>
+<li>1.计算机或相关专业</li>
+<li>2.至少熟悉一种关系型数据库(Orcle/Mysql/postgreSQL)；</li>
+<li>3.精通SQL语句编写，存储过程。</li>
+--><Li class="rwsl7">附件</Li>
+<volist name="taskData['fileList']['rows']" id="vo">
+<li class="rwsl8">{$vo['fname']}<a href="{$vo['download_url']}" target="_blank">下载</a></li>
+</volist>
+</ul>
+</div>
+<br />
+<div class="widget-content">
+<h2>申请信息</h2>
+<volist name="joinList['rows']" id="vo">
+  <div class="rwgl9">
+  <ul>
+  <li class="rwgl10"><img src="__PUBLIC__/www/images/ren.png" /></li>
+  <li class="rwgl11">
+  <dt>{$vo['user_data']['realname']}</dt>
+  <dd>申请时间：{$vo['addtime']|date="Y-m-d",###}</dd>
+  <dd class="rwgl14">
+  <?php
+//0:等待审核,10:已同意,20:已拒绝，30:准备开始,40：进行中，50:申请退出,60:已退出,70:已完成
+if($vo[state]==0){
+$html=<<<aaa
+<a href="javascript:void(0)" onclick="agreeJoin($vo[id])"  class="rwgl12">同意</a> | 
+<a href="javascript:void(0)" onclick="refuseJoin($vo[id])"  class="rwgl13">拒绝</a> 
+aaa;
+}elseif($vo[state]==10){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">已同意</a>
+aaa;
+}elseif($vo[state]==20){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">已拒绝</a>
+aaa;
+}elseif($vo[state]==30){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">准备开始</a>
+aaa;
+}elseif($vo[state]==40){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">进行中</a>
+aaa;
+}elseif($vo[state]==50){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">申请退出</a>|<a href="javascript:void(0)" onclick="withdrawal($vo[id])" class="rwgl12">同意</a> 
+aaa;
+}elseif($vo[state]==60){
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">已退出</a>
+aaa;
+}elseif($vo[state]==70){
+if($vo[publisher_comment_state]==0){
+$html=<<<aaa
+
+<a href="javascript:void(0)"   class="rwgl15">已完成</a>|<a href="__APP__/TaskComment/publisherCommentIndex?joinid=$vo[id]" class="rwgl12" target="_blank">去评价</a> 
+
+aaa;
+
+}else{
+$html=<<<aaa
+<a href="javascript:void(0)"   class="rwgl15">已评价</a>
+aaa;
+
+}
+}
+
+echo $html;
+
+?>
+  </dd>
+  </li>
+  </ul>
+  </div>
+</volist>
+  
+    
+</div>
+<div id="tan" style="display:none" >
+<ul class="tan1">
+<li style="text-align:right"><input type="image" src="__PUBLIC__/www/images/cha.png" onclick="close('tan')"/ ></li>
+  <form id="form1" name="form1" method="post" action="{:U('Task/endMyTask')}">
+  <input type="hidden" name="id" id="id" value="{$taskData['id']}" />
+   <li class="tan2">   <label>
+        <input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_0" />
+        任务已经提前完成，去付款</label></li>
+     <li class="tan3"> <label>
+        <input type="radio" name="RadioGroup1" value="2" id="RadioGroup1_1" />
+        任务完成不佳，去申请仲裁</label>
+        </li>
+        <li class="tan4"><input name="submit" type="submit" value="确认"/></li>
+  </form>
+ 
+</ul>
+</div>							
+						</div> <!-- /widget -->
+						
+					</div> <!-- /span9 -->
+					
+				</div> <!-- /row -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+<include file="Common:footer" />
+
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/www/js/jquery-1.7.2.min.js"></script>
+<script src="__PUBLIC__/www/js/task/joinHand.js"></script>
+
+
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+
+  </body>
+</html>

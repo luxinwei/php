@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deepgray" >
+
+    <TextView
+        android:id="@+id/leftText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/titleText"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/nav_text_margin"
+        android:paddingRight="@dimen/nav_text_margin"
+        android:text="@string/back_string"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/T8_20" />
+
+    <TextView
+        android:id="@+id/rightText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/nav_text_margin"
+        android:paddingRight="@dimen/nav_text_margin"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/rightText"
+        android:gravity="center" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/RedPoint"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_toRightOf="@id/imgRight"/>
+    </RelativeLayout>
+
+</RelativeLayout>

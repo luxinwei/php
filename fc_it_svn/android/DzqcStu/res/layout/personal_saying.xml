@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GRB6"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+
+    <EditText
+        android:id="@+id/et_userSaying"
+        android:background="@drawable/et_bord_style"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/tvCommentHint"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:hint="@string/work_comment_hint">
+    </EditText>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="限100字"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        style="@style/tvCommentHint"
+        android:layout_gravity="right"/>
+    
+</LinearLayout>

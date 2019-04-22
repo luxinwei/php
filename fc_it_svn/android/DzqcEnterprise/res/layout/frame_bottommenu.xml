@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottommenu_bg"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:id="@+id/item_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_bottommenu_index"
+            android:text="@string/bottommenu_index"
+            android:textColor="@drawable/text_bottommenu_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_server"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_bottommenu_server"
+            android:text="@string/bottommenu_serve"
+            android:textColor="@drawable/text_bottommenu_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_bottommenu_mine"
+            android:text="@string/bottommenu_mine"
+            android:textColor="@drawable/text_bottommenu_selector" />
+    </RelativeLayout>
+
+</LinearLayout>

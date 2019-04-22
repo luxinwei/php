@@ -1,0 +1,678 @@
+[ 2016-06-22T08:50:12+08:00 ] 192.168.1.119 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002025s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002106s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005056s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1210769925@qq.com' or mobile='1210769925@qq.com' ) LIMIT 1   [ RunTime:0.000324s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =126 ) [ RunTime:0.000093s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =126 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =126 )
+
+[ 2016-06-22T08:58:18+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004261s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000486s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000089s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T08:58:20+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001196s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003602s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000349s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000070s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T08:59:07+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001318s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003691s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:01:59+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001231s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003935s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000576s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000119s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:03:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001377s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005354s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000459s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000088s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:03:32+08:00 ] 192.168.1.119 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001612s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001677s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004392s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1210769925@qq.com' or mobile='1210769925@qq.com' ) LIMIT 1   [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =126 ) [ RunTime:0.000096s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =126 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =126 )
+
+[ 2016-06-22T09:08:28+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001151s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004465s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000116s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:14:19+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003664s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000078s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:14:20+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000801s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003811s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000082s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:30:04+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001269s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005245s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000095s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:31:50+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001463s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003866s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000354s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000096s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:33:37+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001203s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004053s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000283s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000075s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:35:48+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001255s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004204s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000535s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000117s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T09:38:26+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002225s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002559s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002588s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004603s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000513s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000117s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:07:47+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001915s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001966s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005454s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000394s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000515s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:08:31+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001315s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003305s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:13:49+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001835s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003280s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000345s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000093s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:15:23+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001935s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003624s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000124s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:16:06+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005437s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000503s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000162s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:19:41+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001515s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004069s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000098s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:21:30+08:00 ] 192.168.1.69 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003606s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='SVUN13838269572' or mobile='SVUN13838269572' ) LIMIT 1   [ RunTime:0.000362s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =59 ) [ RunTime:0.000125s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =59 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =59 )
+
+[ 2016-06-22T10:38:59+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003508s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000105s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:49:30+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001238s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001304s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.003555s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.001639s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000200s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T10:55:30+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004685s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:01:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004249s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000407s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000113s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000847s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004626s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000770s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004144s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000123s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000711s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004088s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000093s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000725s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004171s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004071s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000105s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:02:29+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000777s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004873s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:05:26+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001125s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004187s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000106s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:12:07+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002638s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009631s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000771s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:15:21+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001887s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006438s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008933s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000509s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:18:21+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001413s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004197s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.001118s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000196s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:24:08+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001568s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001624s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004144s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000106s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T11:27:25+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002180s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006485s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000759s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.001111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T13:19:22+08:00 ] 192.168.1.69 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004977s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='dzqcedu@163.com' or mobile='dzqcedu@163.com' ) LIMIT 1   [ RunTime:0.001056s ]
+
+[ 2016-06-22T13:37:04+08:00 ] 192.168.1.69 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001686s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004136s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1210769925@qq.com' or mobile='1210769925@qq.com' ) LIMIT 1   [ RunTime:0.000421s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =126 ) [ RunTime:0.000157s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =126 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =126 )
+
+[ 2016-06-22T13:45:39+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004778s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000469s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000153s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T14:06:27+08:00 ] 192.168.1.69 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003121s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005334s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1210769925@qq.com' or mobile='1210769925@qq.com' ) LIMIT 1   [ RunTime:0.000453s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =126 ) [ RunTime:0.000108s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =126 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =126 )
+
+[ 2016-06-22T14:09:39+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004229s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13603987212' or mobile='13603987212' ) LIMIT 1   [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =74 ) [ RunTime:0.000091s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =74 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =74 )
+
+[ 2016-06-22T17:07:11+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002432s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.015678s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2987910254@qq.com' or mobile='2987910254@qq.com' ) LIMIT 1   [ RunTime:0.007985s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =86 ) [ RunTime:0.001282s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =86 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =86 )
+
+[ 2016-06-22T17:07:12+08:00 ] 127.0.0.1 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004664s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2987910254@qq.com' or mobile='2987910254@qq.com' ) LIMIT 1   [ RunTime:0.000480s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =86 ) [ RunTime:0.001156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =86 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =86 )
+

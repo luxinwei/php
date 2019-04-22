@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/fb.css"/>
+<title>大学生在线创新创业平台</title>
+</head>
+
+<body bgcolor="#eef6f0">
+<include file="Common:header" />
+<div class="fb">
+<a href="./">首页 </a>  > <a href="">发布</a></div>
+<div class="fb1">
+<img src="__PUBLIC__/www/images/qrfb.png" />
+</div>
+<script type="text/javascript">
+ function show(a){
+	 document.getElementById(a).style.display="block";
+	 }
+</script>
+<div class="fb2">
+<h2 class="fb3">选择发布分类</h2>
+<ul class="fb4">
+  <Li class="fb5"><a href="{:U('Task/addIndex')}">我要发布任务</a></Li>
+<Li class="fb6"><a href="#" onclick="show('fb8');">我要发布招聘</a> 
+<div id="fb8" style="display:none">
+<Ul>
+  <Li class="fb9"><a href="{:U('Recruit/addIndex',array('state'=>3))}">招聘全职</a></Li>
+  <Li class="fb9"><a href="{:U('Recruit/addIndex',array('state'=>2))}">招聘兼职</a></Li>
+</Ul></div></Li>
+</ul></div>
+<div class="fb7">
+<h3>常见问题：</h3>
+
+<h3>一.我在大学生在线创新创业平台上交易安全吗？</h3>
+<p>答：1.大学生在线创新创业平台是校企合作平台，具有政府和教育部门支持，担保您的资金安全可靠。</p>
+  <p>  2.在您规定的任务时间内，您可以随时选择结束任务，去付款或者仲裁。学生任务不能完成达标，平台会给予仲裁保证。</p>
+   <p> 3.所有推送范围内的学生均为实名认证，在校学生。</p>
+<h3>二.我改怎么填写我的需求？</h3>
+<p>答：1.您可以查看其他类似发布的信息，参考别人是怎么描写的。</p>
+    <p>2.尽量用简单明了的话语描写自己的需求。</p>
+   <p> 3.实在描述不清楚，有什么问题可以直接询问客服人员。</p>
+</div>
+<include file="Common:footer" /> 
+</body>
+</html>

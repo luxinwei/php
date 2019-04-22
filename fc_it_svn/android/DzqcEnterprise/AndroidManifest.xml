@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dzqc.enterprise"
+    android:versionCode="2"
+    android:versionName="1.0.1" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- bugly崩溃日志权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.dzqc.enterprise.config.DzqcEnterprise"
+        android:allowBackup="true"
+        android:icon="@drawable/ws_launcher"
+        android:label="@string/app_display_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.dzqc.enterprise.ui.UserLogin"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主页面 -->
+        <activity android:name=".ui.MainActivity" >
+        </activity>
+
+        <!-- 用户注册 -->
+        <activity android:name=".ui.UserRegister" />
+
+        <!-- 忘记密码 -->
+        <activity android:name=".ui.PasswordForget" >
+        </activity>
+        <activity android:name=".ui.PasswordReSetting" >
+        </activity>
+
+        <!-- 企业认证 -->
+        <activity android:name=".ui.UserCertificationActivity" >
+        </activity>
+        <activity android:name=".ui.UserCertificationStepActivity" >
+        </activity>
+        <activity android:name=".ui.UserCertificationSubmitActivity" >
+        </activity>
+        <activity android:name=".ui.UserCertificationNoticeActivity" >
+        </activity>
+        <activity android:name=".ui.UserCertificationState" >
+        </activity>
+
+        <!-- 我的 -->
+        <activity android:name=".ui.mine.PersonalInfoActivity" >
+        </activity>
+
+        <!-- 任务 -->
+        <activity android:name=".ui.work.WorkDetailActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkPublishActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkPublishAdsActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkSchoolListActivity"></activity>
+        <activity android:name=".ui.work.WorkSchoolAddActivity"></activity>
+        <activity android:name=".ui.work.WorkAlreadySchool"></activity>
+        <activity android:name=".ui.work.WorkGradeListActivity"></activity>
+        <activity android:name=".ui.work.WorkOtherInfoActivity" android:theme="@style/SampleTheme.Light"></activity>
+        <activity android:name=".ui.work.WorkSendSelectActivity"></activity>
+        
+    </application>
+
+</manifest>

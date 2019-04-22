@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 头部导航 -->
+    <color name="theme">#09ba07</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="deepgray">#373b3e</color>
+
+    <!-- 底部导航 -->
+    <color name="bottommenu_bg">#f9f9f9</color>
+    <color name="text_bottommenu_normal">#5c5b5b</color>
+    <color name="bottommenu_line">#99e7e7e7</color>
+
+    <!-- 扫描条码zxing -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="transparent">#33000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- 首页 -->
+    <color name="dot_blur_bg">#3d4145</color>
+    <color name="dot_focus_bg">#007aff</color>
+    <color name="item_bg">#ececec</color>
+    <color name="point_select">#5c5b5b</color>
+    <color name="point">#e3e3e3</color>
+
+    <!-- 登录页面 -->
+    <color name="color_line_green">#00c30a</color>
+    <color name="color_login_default">#a2e08d</color>
+    <color name="color_login_press_before">#09ba07</color>
+    <color name="color_login_press_after">#08b106</color>
+    <color name="color_login_forget_pwd">#5c6484</color>
+    <color name="color_forget_pwd">#5b6480</color>
+    <color name="color_other_login">#09ba07</color>
+    <color name="color_account">#c0c0c0</color>
+
+    <!-- 发送验证码样式 -->
+    <color name="color_smsCode_before">#09ba07</color>
+    <color name="color_smsCode_after">#08b106</color>
+
+    <!-- 注册按钮样式 -->
+    <color name="color_registerBefore">#09ba07</color>
+    <color name="color_registerAfter">#08b106</color>
+    <color name="color_registerNormal">#a2e08d</color>
+
+    <!-- 实名认证 -->
+    <color name="color_certification_status_font">#a2e08d</color> <!-- GRB7 -->
+    <color name="color_certification_font">#373b3e</color> <!-- GRB8 -->
+    <!-- 颜色库 -->
+    <color name="GRB1">#c0c0c0</color>
+    <color name="GRB2">#09ba07</color>
+    <color name="GRB3">#5b6481</color>
+    <color name="GRB4">#a2e08d</color>
+    <color name="GRB5">#08b106</color>
+    <color name="GRB6">#ffffff</color>
+    <color name="GRB7">#636567</color>
+    <color name="GRB8">#373b3e</color>
+    <color name="GRB9">#484747</color>
+    <color name="GRB10">#eae9ef</color>
+    <color name="GRB11">#74d7a1</color>
+    <color name="GRB12">#8ad5ea</color>
+    <color name="GRB13">#10a9d2</color>
+    <color name="GRB14">#e985a1</color>
+    <color name="GRB15">#f8d18e</color>
+    <color name="GRB16">#f04f33</color>
+    <color name="GRB17">#a4a4a4</color>
+
+</resources>

@@ -1,0 +1,33 @@
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="account-container">
+<div class="account-avatar"><img
+	src="__PUBLIC__/www/img/headshot.png" alt="" class="thumbnail" /></div>
+<!-- /account-avatar -->
+<div class="account-details"><span class="account-name">{$info['username']}</span>
+<span class="account-role"><if condition="$info['audit']  eq  0"><span>
+未认证 </span><elseif condition="$info['audit']  eq  10" /><span>认证中 </span><elseif
+	condition="$info['audit']  eq  20" /><span>认证成功</span> <else /><span>认证失败
+</span> </if></span></div>
+<!-- /account-details --></div>
+<!-- /account-container -->
+<hr />
+<ul id="main-nav" class="nav nav-tabs nav-stacked">
+	<li><a href="{:U('My/index')}"> <i class="icon-home"></i>
+	我的主页 </a></li>
+	<li><a href="__APP__/Task/getMyPublishList"> <i class="icon-pushpin"></i> 我的任务 </a></li>
+	<li><a href="#"> <i class="icon-th-list"></i> 我的账户
+	</a></li>
+	<li><a href="#"> <i class="icon-th-large"></i> 个人设置
+	</a></li>
+	<li><a href="#"> <i class="icon-signal"></i> 评价管理
+	</a></li>
+	<li><a href="__APP__/Recruit/getMyPublishList"> <i class="icon-user"></i> 招聘管理 </a>
+	</li>
+	<li><a href="#"> <i class="icon-lock"></i> 消息管理 </a></li>
+	<li><a href="__APP__/Company/logout"> <i class="icon-lock"></i>退出登录 </a></li>
+</ul>
+<hr />
+</div>

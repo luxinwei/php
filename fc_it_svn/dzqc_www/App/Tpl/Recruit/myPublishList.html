@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>招聘列表</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="__PUBLIC__/www/css/bootstrap.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+	rel="stylesheet" />
+<link href="__PUBLIC__/www/css/font-awesome.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/adminia.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/adminia-responsive.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/pages/plans.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<include file="Common:header" />
+<!-- /span3 -->
+<include file="Common:left" />
+<div class="span9">
+<h1 class="page-title">
+					<i class="icon-th-large"></i>
+					我的招聘<a href="{:U('Recruit/addIndex')}" class="fb">发布</a>					
+				</h1>
+<div class="row">
+<div class="span9">
+<div class="widget">
+<div class="widget-header">
+<h3>招聘列表</h3>
+</div>
+<!-- /widget-header -->
+<div class="widget-content">
+<div class="tabbable">
+<ul class="nav nav-tabs">
+	<li><a href="__APP__/Recruit/getMyPublishList?state="" >全部</a></li>
+	<li><a href="__APP__/Recruit/getMyPublishList?state=2" >兼职</a></li>
+	<li><a href="__APP__/Recruit/getMyPublishList?state=3" >全职</a></li>
+</ul>
+<br />
+<div class="tab-content">
+<div class="tab-pane active">
+<foreach name="list.rows" item="recruitData">
+<div class="widget-content">
+<div class="rwgl3">
+<dl>
+	<dt><a target="_blank" href="__APP__/Recruit/detail?id={$recruitData.id}" >{$recruitData.position}</a></dt>
+	<dd>发布者：{$recruitData.publisherData.companyname}</dd>
+	<dd class="rw9">任务内容简介：{$recruitData.responsibility}</dd>
+	<dd class="rw10"><span class="rw11">报酬：{$recruitData.remuneration}元（一次性支付）</span>
+	 <span class="rw12">已有{$recruitData.join_number}人申请</span> <span class="rw13">任务周期：{$recruitData.working_cycle}天</span>
+	</dt>
+</dl>
+</div>
+</div>
+</foreach>
+<div class="rw14">
+	<?php echo $page;?>
+</div>
+<!-- 结束 -->
+</div>
+</div>
+</div>
+<!-- /widget-content --></div>
+<!-- /widget --></div>
+<!-- /span9 --></div>
+<!-- /row --></div>
+<!-- /span9 --></div>
+<!-- /row --></div>
+<!-- /container --></div>
+<!-- /content -->
+<include file="Common:footer" />
+<!-- /footer -->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/www/js/jquery-1.7.2.min.js"></script>
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+</body>
+</html>

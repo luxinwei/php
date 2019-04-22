@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld"  />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录</title>
+
+<?php 
+common_css();
+common_js();
+?>
+<link href="__PUBLIC__/www/css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/www/js/user/login.js"></script>
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
+</head>
+<body id="login_bg">
+	<div class="login_wrapper">
+		<div class="login_header">
+        	<a href="/"><img src="__PUBLIC__/www/img/login.png" width="285" height="62" alt="" /></a>
+            <div id="cloud_s"><img src="__PUBLIC__/www/img/cloud_s.png" width="81" height="52" alt="cloud" /></div>
+            <div id="cloud_m"><img src="__PUBLIC__/www/img/cloud_m.png" width="136" height="95"  alt="cloud" /></div>
+        </div>
+        
+		 <div class="login_box">
+		 <form action="{:U('User/loginAct')}" method="post" id="loginForm" name="form" >
+				<input type="text" id="email" name="name" value="" tabindex="1" placeholder="请输入已注册的手机号" onfocus="if(placeholder=='请输入已注册的手机号'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入已注册的手机号'}" />
+			  	<input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" onfocus="if(placeholder=='请输入密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入密码'}" />
+				<span class="error" style="display:none;" id="beError"></span>
+			    <label class="fl" for="remember"><input type="checkbox" id="remember" value="" checked="checked" name="autoLogin" /> 记住我</label>
+			    <a href="{:U('User/forgetPwd')}" class="fr" target="_blank">忘记密码？</a>
+
+				<a style="color:#fff;" href="#" id="login" class="submitLogin" title="登 &nbsp; &nbsp; 录"/>登 &nbsp; &nbsp; 录</a>
+			</form>
+			<div class="login_right">
+				<div>还没有APP帐号？</div>
+				<a  href="{:U('User/reg')}"  class="registor_now">立即注册</a>
+			    <div class="login_others">使用以下帐号直接登录:</div>
+			    <a  href="h/ologin/auth/sina.html"  target="_blank" class="icon_wb" title="使用微博帐号登录"></a>
+			    <a  href="h/ologin/auth/qq.html"  class="icon_qq" target="_blank" title="使用QQ帐号登录"></a>
+			</div>
+        </div>
+        <div class="login_box_btm"></div>
+    </div>
+
+
+</body>
+</html>

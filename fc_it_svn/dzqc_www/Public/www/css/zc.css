@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+/*********************************************
+* Author : Vee
+* Contect : vee@3wcoffee.com
+**********************************************
+* background:#0d9572;             绿 背景色
+* background:#0d9572;             绿 按钮
+* background:#00694e;             绿 按钮 current
+* color:#019875;                  绿字体
+* background:#fafafa;             灰 背景色
+* border:1px dashed #cfd0d2；     灰 边框
+* height:30px;                    list page btn
+* height:46px;                    login and register btn
+* height:60px;                    detail page btn .btn_big
+**********************************************/
+input,button{border:none;color:#c9c8c8}
+*{outline: none; }html,body{height:100%;}
+#body{min-height: 100%;height: auto !important; height: 100%; margin: 0 0 ;}
+body{margin:0;padding:0; font:14px/22px "微软雅黑","宋体",Arial; color:#333;word-wrap:break-word;}
+ul li{ list-style:none}
+.clearfix:after{content: "";height: 0;clear: both;visibility: hidden;}
+.clearfix{display: inline-block;}  /* for IE/Mac */
+h1,h2,h3,h4,h5{font-weight:normal;}
+
+
+/*end globel style*/
+#login_bg{ background:#45c17f;overflow:hidden;}
+.login_wrapper{ width:700px; margin:0 auto;color:#777;font-size:16px;height:600px;margin-top:110px;}
+.login_header{position:relative; margin-bottom:20px;}
+.login_header img{margin:30px 0 0 20px;}
+#cloud_s{position:absolute; left:375px; top:15px;}
+#cloud_m{position:absolute; left:470px; top:-35px;}
+.login_box{min-height:300px; background:#eafffd; padding:40px; overflow:hidden;}
+#menu{width:390px; overflow:hidden; float:left;height:410px}
+#menu #nav {display:block;width:100%;padding:0;margin:0;list-style:none;height:58px;
+line-height:58px;font-size:14px;}
+#menu #nav a{color:#adadad}
+#menu_con{ width:390px; height:135px; border-top:none}
+.tag{ overflow:hidden;height:410px}
+.selec{color:#000 !important;background:url(../images/zc1.png) no-repeat
+ left bottom;display:block}
+.zc{width:296px;}
+.zc1{margin-left:45px;float:left}
+.zc2{float:right;margin-right:45px}
+.zc3 input{width:296px;height:42px;line-height:42px;border:1px #eaeaea solid;margin-top:10px;color:#777}
+.zc3 input:hover{border:1px #09ba08 solid}
+.zc4{height:44px;overflow:hidden;margin-top:10px}
+.zc4 input{width:206px;overflow:hidden;float:left;height:40px !important;
+border:1px #eaeaea solid;color:#777}
+.zc4 input:hover{border:1px #09ba08 solid;}
+.zc4 img{float:left;width:80px;margin-left:8px}
+.zc4 a{background:#09ba08;color:#FFF;width:80px;float:left;display:block;height:41px;
+line-height:41px;text-align:center;margin-left:8px}
+.zc44{background:#09ba08 ;color:#FFF;width:80px !important ;float:left;height:41px;
+line-height:41px;text-align:center !important;margin-left:8px;color:#FFF !important}
+.zc5{width:100%;text-align:center;margin-top:10px}
+.zc5 a{color:#284764;font-size:13px}
+.lg10{background:#09ba08;width:296px;height:40px;line-height:40px;color:#FFF}
+.login_right{*width:170px; float:left;margin:10px 0 0 30px;line-height:30px;}
+.registor_now{color:#019875;background: right center no-repeat; padding-right:24px; float:left; height:30px;line-height:30px;}
+.registor_now:hover{color:#019875; text-decoration:underline;}
+.login_others{ clear:both; margin:70px 0 10px 0;}
+.icon_wb{width:54px; height:54px; float:left; background:url(../img/wbqq.png) left top no-repeat; margin:0 30px 0 10px;}
+.icon_qq{width:54px; height:54px; float:left; background:url(../img/wbqq.png) right top no-repeat;}
+.wj2{height:54px;overflow:hidden;line-height:54px;color:#333333}
+.wj3{float:left;width:50%;text-align:center}
+.wj4{float:right;color:#adadad;width:50%;text-align:center}
+.wj5{width:100%;}
+.wj6{width:100%;text-align:center}
+.wj6 input{width:466px;height:46px;color:#777;text-indent:1em}
+.wj6 input:hover{border:1px #09ba08 solid;height:44px}
+.wj7{width:466px;margin:30px auto;height:46px}
+.wj7 input{width:360px;height:46px; color:#777;
+float:left;}
+.wj7 input:hover{border:1px #09ba08 solid;height:44px;width:358px}
+.wj77{width:100px !important;background:#09ba08;height:46px;display:block;float:right;
+line-height:46px;color:#FFF !important;text-align:center;}
+.wj8{width:100%;text-align:center;margin-top:50px;clear:both;height:40px}
+.wj8 input{background:#09ba08;width:286px;height:40px;color:#FFF}
+.wj9{width:100%;text-align:center;margin-top:30px}
+.wj9 input{width:466px;;height:46px;color:#777;text-indent:1em}
+.wj9 input:hover{border:1px #09ba08 solid;height:44px}

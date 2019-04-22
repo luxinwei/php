@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/cycx.css"/>
+<?php 
+common_css();
+common_js();
+?>
+<title>最新消息</title>
+</head>
+<body bgcolor="#eef6f0">
+<include file="Common:header" />
+<div class=""></div>
+<div class="cycx">
+<h2>最新信息</h2>
+<foreach name="list.rows" item="recruitData">
+<ul class="cycx1">
+<li class="cycx3"><span class="cycx2">{$recruitData['agree']}赞</span> <a target="_blank" href="__APP__/Ideas/detail?id={$recruitData.id}" >{$recruitData.title}</a></li>
+<Li class="cycx4">
+{$recruitData['desc']}
+</Li>
+<li class="cycx5">发布者<span>{$recruitData['username']}</span></li>
+</ul>
+</foreach>
+
+</div>
+<div class="rw14">
+<ul>
+<?php echo $page;?>
+</ul>
+</div>
+<include file="Common:footer" /> 
+</body>
+</html>

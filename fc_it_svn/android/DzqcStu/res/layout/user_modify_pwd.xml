@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GRB10"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/tvMoneyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/mine_user_pwd_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/GRB6" >
+
+            <TextView
+                android:id="@+id/tv_oldPwd"
+                style="@style/tv_mine_username_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mine_user_account" />
+
+            <EditText
+                android:id="@+id/edit_oldPwd"
+                style="@style/tvUserInfoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_oldPwd"
+                android:background="@null"
+                android:hint="@string/mine_user_oldpwd_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/GRB6" >
+
+            <TextView
+                android:id="@+id/tv_newPwd"
+                style="@style/tv_mine_username_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mine_user_pwd" />
+
+            <EditText
+                android:id="@+id/edit_newPwd"
+                  style="@style/tvUserInfoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_newPwd"
+                android:background="@null"
+                android:hint="@string/mine_user_newpwd_hint" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/GRB6" >
+
+            <TextView
+                android:id="@+id/tv_reNewPwd"
+                style="@style/tv_mine_username_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/mine_user_pwd_confirm" />
+
+            <EditText
+                android:id="@+id/edit_reNewPwd"
+                  style="@style/tvUserInfoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_reNewPwd"
+                android:background="@null"
+                android:hint="@string/mine_user_renewpwd_hint" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvUpdPwd"
+            style="@style/loginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user_login_btn"
+            android:text="@string/forget_pwd_complete" />
+    </LinearLayout>
+
+</LinearLayout>

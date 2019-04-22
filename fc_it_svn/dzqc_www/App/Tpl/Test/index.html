@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<?php
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/area.js"></script>
+<title>Ajax地域联动</title>
+</head>
+
+<body>
+<form action="{:U('Test/getAll')}" method="post">
+<div>
+省份：
+<select id="provinces">  
+     <option value="-1">请选择省份</option>  
+</select> 
+城市：
+<select id="citys">  
+     <option value="-1">请选择城市</option>  
+</select> 
+地区：
+<select id="countys">  
+     <option value="-1">请选择县区</option>  
+</select> 
+</div>
+<input type="submit" value="go" />
+</form>
+</body>
+</html>

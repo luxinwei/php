@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar">
+    <item name="android:textSize">5sp</item>
+    <item name="android:textColor">@color/GRB6</item>
+     </style>
+    
+    <style name="smart_drop_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+       <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_full</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">18dip</item>
+    </style>
+    
+    <!-- 弹窗动画效果 -->
+    <style name="pop_window_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_bottom</item>
+    </style>
+
+    <!-- 发送验证码style -->
+    <style name="reg_send_code">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/sms_send_code</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 登录/注册按钮样式 -->
+    <style name="loginStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">49dp</item>
+    </style>
+
+    <style name="mProgress_horizontal">  
+    <item name="android:indeterminateOnly">false</item>  
+    <item name="android:progressDrawable">@drawable/progressbar_horizontal_style</item><!-- progress_horizontal -->  
+    <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>  
+    <item name="android:minHeight">20dip</item>  
+    <item name="android:maxHeight">20dip</item>  
+    </style>  
+    
+    <!-- 输入框字体样式 -->
+    <style name="editStyle">
+        <item name="android:textColor">@color/color_account</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 忘记密码 -->
+    <style name="findPwdStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_forget_pwd</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 实名认证 /状态 -->
+    <style name="tvNameStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_certification_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/color_certification_font_hint</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="tvCareStyle">
+        <item name="android:textColor">@color/color_certification_font_care</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="tvCertificateStatusStyle">
+        <item name="android:textColor">@color/color_certification_status_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tvCertificate_result_info">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+
+    <!-- 我的 -->
+    <style name="tv_mine_username_style">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+
+     <style name="tvMyName">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T6_16</item>
+    </style>
+      <style name="tv_comment_title">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+    
+    <style name="tv_mine_usermoney_style">
+        <item name="android:textColor">@color/GRB2</item>
+        <item name="android:textSize">@dimen/T9_15</item>
+    </style>
+
+    <style name="tv_mine_work_status_style">
+        <item name="android:textColor">@color/GRB7</item>
+        <item name="android:textSize">@dimen/T5_13</item>
+    </style>
+
+    <style name="tv_mine_work_count_style">
+        <item name="android:textColor">@color/GRB1</item>
+        <item name="android:textSize">@dimen/T9_15</item>
+    </style>
+     <style name="tv_mine_base_font_style">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T4_12</item>
+    </style>
+    
+     <!-- 任务 -->
+      <style name="tvComTitleStyle">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+      <style name="tvPositionStyle">
+        <item name="android:textColor">@color/GRB17</item>
+        <item name="android:textSize">@dimen/T4_12</item>
+    </style>
+     <style name="tvDateStyle">
+        <item name="android:textColor">@color/GRB1</item>
+        <item name="android:textSize">@dimen/T3_9</item>
+    </style>
+     <style name="tvComLogoFontStyle">
+        <item name="android:textColor">@color/GRB13</item>
+        <item name="android:textSize">@dimen/T4_12</item>
+    </style>
+     <style name="tvComHeaderStyle">
+        <item name="android:textColor">@color/GRB9</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+    <style name="tvMoneyStyle">
+        <item name="android:textColor">@color/GRB7</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+     <style name="tvPayTypeStyle">
+        <item name="android:textColor">@color/GRB7</item>
+        <item name="android:textSize">@dimen/T3_9</item>
+    </style>
+     <style name="tvPublistNameStyle">
+        <item name="android:textColor">@color/GRB2</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+     <style name="tvPublistContentStyle">
+        <item name="android:textColor">@color/GRB7</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+      <style name="tvFontLookMoreStyle">
+        <item name="android:textColor">@color/GRB6</item>
+        <item name="android:textSize">@dimen/T4_12</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+     <style name="tvButtonStyle">
+        <item name="android:textColor">@color/GRB6</item>
+        <item name="android:textSize">@dimen/T8_20</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+      <style name="tvPregressStyle">
+        <item name="android:textColor">@color/GRB2</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+     <style name="tv_company_style">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T5_13</item>
+    </style>
+      <style name="tv_comment_date_style">
+        <item name="android:textColor">@color/GRB17</item>
+        <item name="android:textSize">@dimen/T9_15</item>
+    </style>
+    <style name="tvCommentHint">
+        <item name="android:textColor">@color/GRB1</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+      <style name="tvCommentSubmit">
+        <item name="android:textColor">@color/GRB6</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+     <style name="tvBarTitle">
+        <item name="android:textColor">@color/GRB6</item>
+        <item name="android:textSize">@dimen/T6_16</item>
+    </style>
+    <style name="tvUserInfoValue">
+        <item name="android:textColor">@color/GRB1</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+    <style name="tvSubmit">
+        <item name="android:textColor">@color/GRB6</item>
+        <item name="android:textSize">@dimen/T1_15</item>
+    </style>
+    <style name="tvPatformTitle">
+        <item name="android:textColor">@color/GRB8</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+     <style name="tvPatformSum">
+        <item name="android:textColor">@color/GRB5</item>
+        <item name="android:textSize">@dimen/T10</item>
+    </style>
+     <style name="tvDialogConfirm">
+        <item name="android:textColor">@color/GRB5</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+     <style name="tvInnovationDate">
+        <item name="android:textColor">@color/GRB1</item>
+        <item name="android:textSize">@dimen/T4_12</item>
+    </style>
+     <style name="tvSchoolAlready">
+        <item name="android:textSize">@dimen/T3_9</item>
+        <item name="android:padding">2dp</item>
+    </style>
+     <style name="tvSendTitleStyle">
+        <item name="android:textColor">@color/GRB17</item>
+        <item name="android:textSize">@dimen/T6_16</item>
+    </style>
+     <style name="tvAddSchoolStyle">
+        <item name="android:textSize">@dimen/T4_12</item>
+        <item name="android:textColor">@color/GRB5</item>
+    </style>
+      <style name="tvApplyListName">
+        <item name="android:textColor">@color/GRB7</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+      <style name="tvApplyListDate">
+        <item name="android:textColor">@color/GRB17</item>
+        <item name="android:textSize">@dimen/T5_13</item>
+    </style>
+     <style name="tvApplyState">
+        <item name="android:textSize">@dimen/T4_12</item>
+        <item name="android:padding">2dp</item>
+    </style>
+   <style name="tvAgreeInfo">
+        <item name="android:textColor">@color/GRB4</item>
+        <item name="android:textSize">@dimen/T3_9</item>
+    </style>
+      <style name="tvExit">
+        <item name="android:textColor">@color/GRB18</item>
+        <item name="android:textSize">@dimen/T7_14</item>
+    </style>
+</resources>

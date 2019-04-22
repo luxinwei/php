@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/cycx.css"/>
+<?php 
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/resume/detail.js"></script>
+<title>大学生在线创新创业平台</title>
+</head>
+
+<body bgcolor="#eef6f0">
+<include file="Common:header" />
+<div class="cxxq">
+<a href="">个人设置  ></a><a href="">简历详情 ></a>
+</div>
+<div class="grjl">
+<ul class="grjl2">
+<li class="grjl3">基本信息</li>
+ <li class="grjl4">
+  <dt><img src="{$resumeData.student_and_photo}"/></dt>
+  <dd><p>姓名：{$resumeData.realname}</p>
+ <p>性别：<?php
+if($resumeData[sex]==1){
+echo "男";
+}else{
+echo "女";
+}
+?></p>
+ <p>身份证号：{$resumeData.id_card}</p></dd>
+ </li>
+</ul>
+<ul class="grjl2">
+<li class="grjl3">在校信息</li>
+ <li class="grjl5">
+ <ul class="grjl6">
+ <li>所在学校：郑州大学</li>
+ <li>所学专业：计算机科学与技术</li>
+ <li>学       号：{$resumeData.user_no}</li>
+ <li>入校年份：{$resumeData.school_years}年</li>
+ </ul> 
+ </li>
+</ul>
+<h3 class="grjl7 c">联系信息 </h3>
+<div class="grjl8">手机号码：{$resumeData.mobile}</div>
+<h3 class="grjl7 c">个人信息</h3>
+<div class="grjl9"><p>{$resumeData.personal_note}</p>
+</div>
+</div>
+<include file="Common:footer" />
+</body>
+</html>

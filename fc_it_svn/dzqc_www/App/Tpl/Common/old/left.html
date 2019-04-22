@@ -1,0 +1,49 @@
+<!--  <div>
+<ul>
+<li>
+<a href="__APP__/Task/addIndex">发布任务</a>
+</li>
+<li>
+<a href="__APP__/Task/getMyPublishList">我发布的任务</a>
+</li>
+<li>
+<a href="__APP__/Task/addIndex">发布任务</a>
+</li>
+<li>
+<a href="__APP__/Recruit/addIndex?state=2">发布兼职</a>
+</li>
+<li>
+<a href="__APP__/Recruit/addIndex?state=3">发布全职</a>
+</li>
+<li>
+<a href="__APP__/Recruit/getMyPublishList">我发布的招聘</a>
+</li>
+<li>
+<a href="__APP__/Ideas/getMyList">双创项目推荐</a>
+</li>
+</ul>
+</div>-->
+
+
+
+
+<ul class="sml1">
+<li class="sml2"><img src="__PUBLIC__/www/images/img_photo.png" /></li>
+<li>{$info['username']}<img src="__PUBLIC__/www/images/sex.png" /></li>
+<li> <if condition="$info['audit']  eq  0"><span> 未认证 </span><elseif
+		condition="$info['audit']  eq  10" /><span>认证中 </span><elseif
+		condition="$info['audit']  eq  20" /><span>认证成功</span> <else /><span>认证失败 </span>
+			</if>
+		 </li>
+</ul>
+<ul class="sml3">
+<li><a href="__APP__/Index/index"><img src="__PUBLIC__/www/images/home_icon.png" />我的主页</a></li>
+<li><a href="__APP__/Task/getMyPublishList"><img src="__PUBLIC__/www/images/task_icon.png" />我的任务</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/count_icon.png" />我的账户</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/collect_icon.png" />我的收藏</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/set_icon.png" />个人设置</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/message_icon.png"  class="sml4"/>消息管理</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/apprise_icon.png" />评价管理</a></li>
+<li><a href="#"><img src="__PUBLIC__/www/images/other_icon.png" />其他管理</a></li>
+<li><a href="__APP__/Company/logout"><img src="__PUBLIC__/www/images/out_icon.png" />退出登录</a></li>
+</ul>

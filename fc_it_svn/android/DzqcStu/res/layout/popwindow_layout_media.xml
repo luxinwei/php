@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GRB6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvCamera"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+             android:textColor="@color/GRB8"
+            android:textSize="@dimen/T6_16"
+            android:gravity="center"
+            android:text="@string/certificate_popwindow_camera" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/GRB1" />
+
+        <TextView
+            android:id="@+id/tvPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:textColor="@color/GRB8"
+            android:textSize="@dimen/T6_16"
+            android:gravity="center"
+            android:text="@string/certificate_popwindow_photos" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/GRB1" />
+
+        <TextView
+            android:id="@+id/tvCancer"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+             android:textColor="@color/GRB8"
+            android:textSize="@dimen/T6_16"
+            android:gravity="center"
+            android:text="@string/certificate_popwindow_cancer" />
+    </LinearLayout>
+
+</LinearLayout>

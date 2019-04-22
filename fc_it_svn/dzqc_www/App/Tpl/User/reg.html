@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld"  />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+<meta content="">
+<meta content="" name="keywords">
+
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<?php 
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/reg.js"></script>
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/zc.css"/>
+</head>
+<body id="login_bg">
+<div class="login_wrapper">
+		<div class="login_header">
+        	<a href="/"><img src="__PUBLIC__/www/img/login.png" width="285" height="62" alt="招聘" /></a>
+            <div id="cloud_s"><img src="__PUBLIC__/www/img/cloud_s.png" width="81" height="52" alt="cloud" /></div>
+            <div id="cloud_m"><img src="__PUBLIC__/www/img/cloud_m.png" width="136" height="95"  alt="cloud" /></div>
+        </div>
+        <div class="login_box">
+     <div id="menu">
+      <ul id="nav">
+        <li class="zc1"><a href="#" class="selec">手机号注册<span>（学生端）</span></a></li>
+        <li class="zc2"><a href="#" class="">邮箱注册<span >（企业端）</span></a></li> 
+      </ul>
+    <div id="menu_con">
+        <div class="tag" style="display:block">
+            <form id="loginForm" method="post" action="{:U('User/regAct')}"> 
+      <ul class="zc">
+      <li class="zc3"><input type="text" value=""  placeholder="请输入要注册的手机号码" name="mobile" id="mobile" onfocus="if(placeholder=='请输入要注册的手机号码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入要注册的手机号码'}" /></li>
+      <li class="zc4"><input type="text"  placeholder="请输入验证码" name="verify" id="smsCode" value="" onfocus="if(placeholder=='请输入验证码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入验证码'}" />
+      <input type="button" id="getSmsCode" name="getSmsCode" value="获取验证码"  class="zc44"/></li>
+      <li class="zc3"><input type="text"  placeholder="请设置密码" name="password" id="password" onfocus="if(placeholder=='请设置密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请设置密码'}" /></li>
+       <li class="zc3"><input type="text"  placeholder="请设置密码" name="repassword" id="repassword" onfocus="if(placeholder=='请设置密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请设置密码'}" /></li>
+      <li class="lg11"><input name="checkbox" id="checkbox" type="checkbox" checked="checked" value="1" />
+      我已经阅读并同意<span>《用户协议》</span></li>
+      <li><input type="submit" name="" value="注册" id="submitLogin"  class="lg10"/></li>
+      <li  class="zc5"><a href="{:U('User/login')}" >登录</a></li>
+      </ul>
+      </form>
+      </div>
+      
+      
+      <div class="tag" style="display:block">
+          <form action="{:U('Company/reg')}" id="loginForm2" method="post" name="form1">  
+      <ul class="zc">
+      <li class="zc3"><input type="text"  placeholder="请输入要注册的邮箱" name="email" onfocus="if(placeholder=='请输入要注册的邮箱'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入要注册的邮箱'}" /></li>
+      <li class="zc3"><input type="password"  id="password" placeholder="请设置密码" name="password" onfocus="if(placeholder=='请设置密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请设置密码'}" /></li>
+      <li class="zc3"><input type="password"  id="password" placeholder="请设置密码" name="password2" onfocus="if(placeholder=='请设置密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请设置密码'}" /></li>
+      <li class="lg11"><input name="checkbox2" id="checkbox2" type="checkbox" checked="checked" value="1" />
+      我已经阅读并同意<span>《用户协议》</span></li>
+      <li><input type="submit" name="submitLogin2" value="注册"  class="lg10"/></li>
+      <li  class="zc5"><a href="{:U('Company/log')}" >登录</a></li>
+      </ul>
+      </form>
+      </div>
+      </div>
+      
+       <script>
+var tabs=function(){
+    function tag(name,elem){
+        return (elem||document).getElementsByTagName(name);
+    }
+    //获得相应ID的元素
+    function id(name){
+        return document.getElementById(name);
+    }
+    function first(elem){
+        elem=elem.firstChild;
+        return elem&&elem.nodeType==1? elem:next(elem);
+    }
+    function next(elem){
+        do{
+            elem=elem.nextSibling;  
+        }while(
+            elem&&elem.nodeType!=1  
+        )
+        return elem;
+    }
+    return {
+        set:function(elemId,tabId){
+            var elem=tag("li",id(elemId));
+            var tabs=tag("div",id(tabId));
+            var listNum=elem.length;
+            var tabNum=tabs.length;
+            for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selec";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                    })(i)
+            }
+        }
+    }
+}();
+tabs.set("nav","menu_con");//执行
+        </script>
+  </div>
+  	<div class="login_right">
+				<div>已有帐号</div>
+				<a  href="{:U('User/login')}"  class="registor_now">直接登录</a>
+			    <div class="login_others">使用以下帐号直接登录:</div>
+			    <a  href=""  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+			    <a  href=""  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录"></a>
+			</div>
+            </div>
+</div>
+</body>
+</html>

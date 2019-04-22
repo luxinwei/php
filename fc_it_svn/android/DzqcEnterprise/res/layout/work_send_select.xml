@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvSchoolSelect"
+            style="@style/tvSendNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/work_school_check" />
+        <TextView
+            android:id="@+id/tv_SelectSchools"
+            style="@style/tv_mine_work_status_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvSchoolSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2222" />
+
+        <ImageView
+            android:id="@+id/imgSchoolGo"
+          android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/approve_select_icon" />
+
+        <TextView
+            android:id="@+id/tvAlreadySchool"
+            style="@style/tvSchoolAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imgSchoolGo"
+            android:background="@drawable/tv_bord_style"
+            android:text="@string/work_school_already"
+            android:textColor="@color/GRB2" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvMajorSelect"
+            style="@style/tvSendNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/work_major_check" />
+
+          <TextView
+            android:id="@+id/tv_SelectMajors"
+            style="@style/tv_mine_work_status_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvMajorSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111" />
+        
+        <ImageView
+            android:id="@+id/imgMajorGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/approve_select_icon" />
+
+        <TextView
+            android:id="@+id/tvAlreadyMajor"
+            style="@style/tvSchoolAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imgMajorGo"
+            android:background="@drawable/tv_bord_style"
+            android:text="@string/work_major_already"
+            android:textColor="@color/GRB2" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tvGradeSelect"
+            style="@style/tvSendNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/work_grade_check" />
+
+        <TextView
+            android:id="@+id/tv_SelectGrades"
+            style="@style/tv_mine_work_status_style"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvGradeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+        
+        <ImageView
+            android:id="@+id/imgGradeGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/approve_select_icon" />
+
+        <TextView
+            android:id="@+id/tvAlreadyGrade"
+            style="@style/tvSchoolAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imgGradeGo"
+            android:background="@drawable/tv_bord_style"
+            android:text="@string/work_grade_already"
+            android:textColor="@color/GRB2" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/tvSendNameStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="@string/work_sendAccount" />
+
+        
+        <EditText android:id="@+id/etPersonNum"
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" 
+             android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:hint="请输入人数"
+            android:text="11"
+            android:inputType="number"
+            android:background="@null"
+            style="@style/editTextStylePhone"/>
+    </RelativeLayout>
+     <include layout="@layout/line_view" />
+    <TextView
+        android:id="@+id/tvNextStep"
+        style="@style/loginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="@string/certification_step_next" />
+
+</LinearLayout>

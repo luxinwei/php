@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>User Account - Bootstrap Admin</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <?php 
+ 	common_css();
+	common_js();
+	?>
+
+    <link href="__PUBLIC__/www/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" />
+    <link href="__PUBLIC__/www/css/font-awesome.css" rel="stylesheet" />
+    
+    <link href="__PUBLIC__/www/css/adminia.css" rel="stylesheet" /> 
+    <link href="__PUBLIC__/www/css/adminia-responsive.css" rel="stylesheet" /> 
+    
+    
+    <link href="__PUBLIC__/www/css/pages/plans.css" rel="stylesheet" /> 
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     
+     </head>
+
+<body>
+	<include file="Common:header" />
+			
+		
+			<include file="Common:left" />
+			
+			
+			<div class="span9">
+				
+			<h1 class="page-title"><i class="icon-th-large"></i> 发布任务</h1>
+				
+				
+				<div class="row">
+					
+					<div class="span9">
+				
+						<div class="widget">
+							<div class="widget-header">
+                           <h3>我的任务>任务需求</h3>
+                           
+                            </div> <!-- /widget-header -->
+									
+							<div class="widget-content">
+
+			 <form action="{:U('Task/save')}" method="post"  id="myform">
+<div id="step_1" class="step">
+<div class="fb1">
+<img src="__PUBLIC__/www/img/qrfb1.png" width="100%" />
+</div>
+<div class="fxq">
+<ul style="margin-left:5px">
+<li>您好，您已经选择发布任务。<a href="#" onclick="JavaScript:history.go(-1)" class="fxq10">返回修改</a></li>
+<li class="fxq1">您要发布的任务标题</li>
+<li><input type="text"  placeholder="一句话描述您的需求，如：XXlogo设计" name="arg[title]" id="" class="fxq2" onfocus="if(placeholder=='一句话描述您的需求，如：XXlogo设计'){placeholder=''}" onblur="if(placeholder==''){placeholder='一句话描述您的需求，如：XXlogo设计'}"/></li>
+<li class="fxq1">请确认您的手机号码</li>
+<li><input type="text"  placeholder="请输入您的手机号码" name="mobile" id="mobile" class="fxq3" onfocus="if(placeholder=='请输入您的手机号码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入您的手机号码'}"/></li>
+<li><input type="text"  placeholder="请输入验证码" name="smsCode" id="smsCode" class="fxq4" onfocus="if(placeholder=='请输入验证码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入验证码'}"/>
+<input type="button" name="getSmsCode" id="getSmsCode" value="获取验证码" class="fxq5"/></li>
+<li class="fxq1">请描述您的具体需求</li>
+<li><textarea name="arg[content]" cols="" rows="" class="fxq6" id="message"  onfocus="if(value=='字数最好在300字以内...'){value=''}"
+    onblur="if (value ==''){value='字数最好在300字以内...'}" >字数最好在300字以内...</textarea></li>
+<li><button type="button" id="getSmsCode" class='upload'>上传附件</button>最多添加五个附加，每个附件不得超过2M
+<br/>
+<label>
+<for start="0" end="4">
+<label>
+<em>
+<a href="" target="_blank">
+<label id="img_{$i}" src="" ></label>
+</a>
+<input  type="hidden"  id="file_key_{$i}" name="files_key[]"   />
+<input  type="hidden"  id="file_name_{$i}" name="files_name[]"   />
+</em>
+</for>
+</label>
+</li>
+<li class="fxq11">
+<input name="button" type="button" value="上一步" onclick="JavaScript:history.go(-1)" />
+<input type="button" name="button " value="下一步" onclick="goto_setp2()"/>
+</li>
+</ul>
+
+<div class="fxq7">
+<p class="fxq8">好的描述，更能找到合适的人才</p>
+<P>模板参考：</P>
+<p>1.所选分类：任务</p>
+<p>2.任务需求：logo设计类</p>
+<p>3.推送目标：美术学院学生</p>
+<p><a href="" class="fxq9">查看更多模板</a></p>
+</div>
+</div>
+</div>
+
+<!-- 第二步 -->
+<div id="step_2" class="step" style="display: none">
+<div class="fb1">
+<img src="__PUBLIC__/www/img/qrfb2.png" width="100%" />
+</div>
+<div class="fts">
+<ul style="margin-left:5px">
+<li>您好，您已填好具体需求。<a href="#" onclick="QC.show_hide('#step_1','.step')" class="fxq10">返回修改</a></li>
+<li class="fxq1">请填写您所需的人数</li>
+<li><input type="text"  value="" name="arg[join_number]" id="" class="fts1"/></li>
+<li class="fxq1">请确认您的任务薪酬</li>
+<li><input type="text"  value="" name="arg[pay_money]" id="" class="fts1"/></li>
+<li class="fxq1">请填写您的任务周期</li>
+<li><input type="text"  value="" name="arg[work_days]" id="" class="fts1"/></li>
+<li class="fxq1">请选择您要推送的学校</li>
+<div class="fts2">
+<ul class="tsl">
+<li><a href="">郑州地区的大学</a></li>
+<li><a href="">开封地区的大学</a></li>
+<li><a href="">许昌地区的大学</a></li>
+<li><a href="">洛阳地区的大学</a></li>
+<li><a href="">南阳地区的大学</a></li>
+<li><a href="">信阳地区的大学</a></li>
+<li><a href="">新乡地区的大学</a></li>
+<li><a href="">焦作地区的大学</a></li>
+<li><a href="">驻马店地区的大学</a></li>
+<li><a href="">商丘地区的大学</a></li>
+<li><a href="">周口地区的大学</a></li>
+<li><a href="">漯河地区的大学</a></li>
+</ul>
+<ul class="tsr">
+<li>郑州大学<li>
+<input  type="hidden" name="push_school" value="1" />
+</ul>
+</div>
+<li class="fxq1 c">请选择您要推送的专业</li>
+<div class="fts2">
+<ul class="tsl">
+<li><a href="">计算机类</a></li>
+<li><a href="">财经类</a></li>
+<li><a href="">机电与机械类</a></li>
+<li><a href="">电子类</a></li>
+<li><a href="">建筑类</a></li>
+<li><a href="">医学类</a></li>
+<li><a href="">园林与种植类</a></li>
+<li><a href="">文秘类</a></li>
+<li><a href="">旅游类</a></li>
+<li><a href="">工业化工类</a></li>
+<li><a href="">音乐/舞蹈类</a></li>
+<li><a href="">艺术设计类</a></li>
+</ul>
+<ul class="tsr">
+<li>理论物理<li>
+<input  type="hidden" name="push_major"  value="1"/>
+</ul>
+</div>
+<li class="fxq1 c">请选择你要推送的级别</li>
+<li class="tsr1">
+  <label>
+    <input  type="radio" name="push_grade"   value="1" checked="checked" s_val="大一学生"/>
+    大一学生 </label>
+    
+  <label>
+   <input  type="radio" name="push_grade"   value="3" s_val="大二学生"/>
+    大二学生</label>
+  <label>
+    <input  type="radio" name="push_grade"   value="5" s_val="大三学生"/>
+    大三学生</label>
+  <label>
+    <input  type="radio" name="push_grade"   value="7" s_val="大四学生"/>
+    大四学生</label>
+  <label>
+    <input  type="radio" name="push_grade"   value="2" s_val="大一以及以上学生"/>
+    大一及以上</label>
+     <label>
+    <input  type="radio" name="push_grade"   value="4" s_val="大二以及以上学生"/>
+    大二及以上</label>
+     <label>
+    <input  type="radio" name="push_grade"   value="6" s_val="大三以及以上学生"/>
+    大三及以上</label>
+    
+</li>
+<li class="fxq11">
+<input type="button" class="button " value="上一步" onclick="QC.show_hide('#step_1','.step')"/>
+<input type="button" class="button " value="下一步" onclick="goto_setp3()"/>
+</li>
+</ul>
+</div>
+</div>
+<!-- 第三步 -->
+<div id="step_3" class="step"  style="display: none">
+<div class="fb1">
+<img src="__PUBLIC__/www/img/qrfb3.png" width="100%" />
+</div>
+<div class="fts">
+<ul style="margin-left:5px">
+<li>您好，您已填好具体需求。<a href="#" onclick="QC.show_hide('#step_2','.step')" class="fxq10">返回修改</a></li>
+<li class="fxq1">您的任务标题：<em id="show_title"></em></li>
+<div class="qrfb">
+<p class="qrfb1">需求描述：</p>
+<p><em id="show_content"></em></p>
+<p class="qrfb1">附件</p>
+<p><em id="show_files"></em></p>
+<p class="qrfb2"><span>联系方式:</span><em id="show_mobile"></em></p>
+</div>
+<div class="qrfb3">
+<ul>
+<li><span><font>.</font>所需人数：</span><em id="show_join_number"></em>人 &nbsp&nbsp&nbsp&nbsp; <span> 
+<font>.</font>薪酬：</span><em id="show_pay_money"></em>元&nbsp&nbsp&nbsp&nbsp;<span><font>.</font>任务周期：
+</span><em id="show_work_days"></em>天</li>
+<li><span>推送学校：</span><em id="show_school">郑州大学</em></li>
+<Li><span>推送专业：</span><em id="show_major">理论物理</em></Li>
+<li><span>推送专业：</span><em id="show_grade"></em></li>
+</ul>
+</div>
+
+<li class="fxq11">
+<input type="button" class="button " value="上一步" onclick="QC.show_hide('#step_2','.step')"/>
+<input type="button" class="button submit" value="确认发布"  />
+</li>
+</ul>
+</div>
+</div>
+</form>
+
+   
+					
+                    		</div> <!-- /widget-content -->
+					
+						</div> <!-- /widget -->
+						
+					</div> <!-- /span9 -->
+					
+				</div> <!-- /row -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+<include file="Common:footer" />
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/www/js/jquery-1.7.2.min.js"></script>
+<script src="__PUBLIC__/www/js/task/add.js"></script>
+
+
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+
+  </body>
+</html>

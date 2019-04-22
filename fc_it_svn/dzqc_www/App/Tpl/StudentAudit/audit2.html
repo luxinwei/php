@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>实名认证--提交数据</title>
+    
+    <include file="Public:top" />
+    
+    </head>
+
+<body>
+	
+<include file="Public:header" />
+
+<div id="content">
+	
+	<div class="container">
+		
+		<div class="row">
+			
+		<include file="Public:left" />
+			
+			<div class="span9">
+				
+				<h1 class="page-title">
+					<i class="icon-th-large"></i>
+					User Account					
+				</h1>
+				
+				
+				<div class="row">
+					
+					<div class="span9">
+				
+						<div class="widget">
+							
+							<div class="widget-header">
+								<h3>实名认证</h3>
+							</div> <!-- /widget-header -->
+     					<div class="widget-content">
+								
+						
+								<div class="tabbable">
+				
+						
+						<br />
+					<div class="tabimg"><img src="__PUBLIC__/www/img/step1.png" /></div>
+                       <div class="widget-content smr8">
+                       <ul>
+								<li class="smr9">注意事项</li>
+<li>以下所需上传的电子版资质文件/图片仅支持JPG\PNG\GIF格式图片，大小请控制在1M之内。</li>
+</ul>
+</div>	
+		
+						<div class="tab-content">
+								<div class="tab-pane active" id="1">
+								<form id="edit-profile" class="form-horizontal" action="{:U('StudentAudit/auditTwoAct')}" method="post" enctype="multipart/form-data" >
+									<fieldset>
+									  <h3>身份证信息</h3>
+									  <div class="control-group">											
+											<label class="control-label" for="realname">姓名</label>
+											<div class="controls">
+												<input type="text" class="input-large disabled" id="realname" name="realname" value="" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="id_card">身份证号</label>
+											<div class="controls">
+												<input type="text" class="input-large" id="id_card" name="id_card" value="" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group --><!-- /control-group -->
+										
+									
+									  <div class="control-group">											
+										<label class="control-label" >性别</label>
+                                            <div class="controls">
+                                            <select name="sex" class="input-small">
+<option value="1" selected="selected" >男</option>
+<option value="2" >女</option>
+</select>
+
+
+</div>
+														
+									  </div> 
+  
+
+											
+											<script type="text/javascript">
+function show(a)
+{document.getElementById(a).style.display ="block";
+
+} 
+
+</script>
+												<h3>学校信息</h3>	
+                                                
+                                                	  <div class="control-group">											
+											<label class="control-label" for="university">学校</label>
+											<div class="controls">
+												<input type="text" class="input-large disabled" id="university" name="university" value="" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+										
+										<div class="control-group">											
+											<label class="control-label" for="major">专业</label>
+											<div class="controls">
+												<input type="text" class="input-large" id="major" name="major" value="" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+                                        <div class="control-group">											
+											<label class="control-label" for="user_no">学号</label>
+											<div class="controls">
+												<input type="text" class="input-large" id="user_no" name="user_no" value="" />
+											</div> <!-- /controls -->				
+										</div> <!-- /control-group -->
+										
+									
+									  <div class="control-group">											
+										<label class="control-label" >入学年份</label>
+                                            <div class="controls">
+                                            <select name="school_years" class="input-small">
+<option value="2015" selected="selected" >2015</option>
+<option value="2014" >2014</option>
+</select>
+
+
+</div>
+														
+									  </div> 
+                                      				  <div class="control-group">											
+										<label class="control-label" >年级</label>
+                                            <div class="controls">
+                                            <select name="grade" class="input-small">
+<option value="1" selected="selected">大一</option>
+<option value="3" >大二</option>
+</select>
+
+
+</div>
+														
+									  </div> 
+                                                
+                                                
+    <div class="control-group">											
+											<label class="control-label" >本人与学生证合照</label>
+											<div class="controls">
+												<button type="button" id="upload" class='upload'>上传附件</button>
+												<input  type="hidden"  id="file_key_0" name="student_and_photo"   />
+												<input  type="hidden"  id="file_name_0" name="fname"   />
+                                              <br />     请确保图片清晰，学生证上文字可辨。<a href="javascript:(0)" id="zp"
+onclick="show('smr15');">点击查看合照实例</a>
+<div id="smr15" style="display:none"><img id="img_0" src="" /></div>
+											</div> <!-- /controls -->   
+                                      </div>
+                                      	
+				<div class="tab-content xyb">
+											<input type="submit" name="submit" id="submit"   value="提交"> 
+                                            </div>
+									</fieldset>
+								</form>
+								</div>
+	
+							</div>
+						  
+						  
+						</div>
+								
+								
+								
+								
+								
+								
+								
+								
+							</div> <!-- /widget-content -->
+							
+						</div> <!-- /widget -->
+						
+					</div> <!-- /span9 -->
+					
+				</div> <!-- /row -->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div> <!-- /span9 -->
+			
+			
+		</div> <!-- /row -->
+		
+	</div> <!-- /container -->
+	
+</div> <!-- /content -->
+					
+<include file="Public:footer" />
+
+
+    
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+<script src="__PUBLIC__/www/js/user/audit2.js"></script>
+
+  </body>
+</html>

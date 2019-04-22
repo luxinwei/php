@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/audit2.js"></script>
+<?php
+common_css();
+common_js();
+?>
+<title>实名认证</title>
+</head>
+
+<body bgcolor="#eef6f0">
+<include file="Common:header" />
+<div class="sm17">
+<div class="smll">
+<include file="Common:left" />
+</div>
+<div class="smrr">
+<h2 class="smr1">实名认证</h2>
+<div class="smr2"><img src="__PUBLIC__/www/images/step1.png" /></div>
+<div class="smr8">
+<ul>
+<li class="smr9">注意事项</li>
+<li>以下所需上传的电子版资质文件/图片仅支持JPG\PNG\GIF格式图片，大小请控制在1M之内。</li>
+</ul>
+</div>
+<div><form id="form" name="form" action="{:U('User/auditTwoAct')}" method="post" enctype="multipart/form-data">
+<h2 class="smr10">身份证信息</h2>
+<ul class="smr11">
+<li class="smr12"><span><font style="color:#F00"> * </font>姓名</span>
+  <input type="text" name="realname" id="realname" value="" /></li>
+<li class="smr12"><span><font style="color:#F00"> * </font>身份证号</span>
+<input type="text" name="id_card" id="id_card" value="" /></li>
+<li class="smr12"><span><font style="color:#F00"> * </font>性别</span>
+<select name="sex">
+<option value="1" selected="selected">男</option>
+<option value="2" >女</option>
+</select></li>
+</ul>
+<h2 class="smr10">学校信息</h2>
+<ul class="smr11">
+<li class="smr12"><span><font style="color:#F00"> * </font>学校</span>
+  <input type="text" name="university" id="university" value="" /></li>
+<li class="smr12"><span><font style="color:#F00"> * </font>专业</span>
+<input type="text" name="major" id="major" value="" /></li>
+<li class="smr12"><span><font style="color:#F00"> * </font>学号</span>
+<input type="text" name="user_no" id="user_no" value="" /></li>
+<li class="smr12"><span><font style="color:#F00"> * </font>入学年份</span>
+<select name="school_years">
+<option>2005</option>
+<option>2006</option>
+<option>2007</option>
+<option value="2008" selected="selected">2008</option>
+<option>2009</option>
+<option>2010</option>
+<option>2011</option>
+<option>2012</option>
+<option>2013</option>
+<option>2014</option>
+<option>2015</option>
+<option>2016</option>
+</select></li>
+<li class="smr13"><span><font style="color:#F00"> * </font>本人与学生证合照</span>
+<button type="button" id="upload" class='upload'>上传附件</button>
+<input  type="hidden"  id="file_key_0" name="student_and_photo"   />
+<input  type="hidden"  id="file_name_0" name="fname"   />
+</li>
+<li class="smr16">请确保图片清晰，学生证上文字可辨。<a href="#" id="zp">点击查看合照实例</a>
+<div class="smr15"><img id="img_0" src="" width="100px" /></div>
+</li>
+<li class="smr14"><input type="submit" name="submit" id="submit" value="提交"/></li>
+
+</ul>
+</form>
+</div>
+</div>
+</div>
+<include file="Common:footer" />
+</body>
+</html>

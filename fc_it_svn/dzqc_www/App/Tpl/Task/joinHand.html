@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/common.css" />
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/login.css" />
+<?php 
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/task/joinHand.js"></script>
+<title>任务参与管理</title>
+</head>
+<body>
+<include file="Tpl/Common/header" />
+<div id="step_1" class="step">
+<div class="wj">
+<h2>我发布的任务</h2>
+<include file="Tpl/Common/left" />
+</div>
+<div class="wj1">
+
+<div>
+<table  class="list">
+<tr>
+<th>会员</th>
+<th>状态</th>
+<th>时间</th>
+<th>操作</th>
+
+</tr>
+<foreach name="joinList.rows" item="vo">
+<tr>
+<td>
+<img src="{$vo.user_data.student_and_photo}" width="40px"></img>
+<br>
+ {$vo.user_data.username}
+ <br>
+ {$vo.user_data.realname}
+</td>
+<td> {$vo.state_text}</td>
+<td> {$vo.addtime|date="Y-m-d H:i",###}</td>
+
+
+<td>
+<?php
+////0:等待审核,10:已同意,20:已拒绝，30:准备开始,40：进行中，50:申请退出,60:已退出,70:已完成
+if($vo[state]==0){
+$html=<<<aaa
+<a href="javascript:void(0)" onclick="agreeJoin($vo[id])" >同意</a> | 
+<a href="javascript:void(0)" onclick="refuseJoin($vo[id])" >拒绝</a> 
+aaa;
+}elseif($vo[state]==10){
+$html=<<<aaa
+无
+aaa;
+}elseif($vo[state]==20){
+$html=<<<aaa
+无
+aaa;
+}elseif($vo[state]==30){
+$html=<<<aaa
+无
+aaa;
+}elseif($vo[state]==40){
+$html=<<<aaa
+无
+aaa;
+}elseif($vo[state]==50){
+$html=<<<aaa
+<a href="javascript:void(0)" onclick="withdrawal($vo[id])">同意</a> 
+aaa;
+}elseif($vo[state]==60){
+$html=<<<aaa
+无
+aaa;
+}elseif($vo[state]==70){
+if($vo[publisher_comment_state]==0){
+$html=<<<aaa
+
+<a href="__APP__/TaskComment/publisherCommentIndex?joinid=$vo[id]" target="_blank">评价</a> 
+
+aaa;
+
+}else{
+$html=<<<aaa
+已评价
+aaa;
+
+}
+}
+
+echo $html;
+
+?>
+</td>
+</tr>
+</foreach>
+
+</table>
+</div>
+<div class="megas512">
+    	<?php echo $page;?>
+</div>
+</div>
+</div>
+
+<include file="Tpl/Common/footer" />
+</body>
+</html>

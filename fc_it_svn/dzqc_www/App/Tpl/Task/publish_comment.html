@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/common.css" />
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/login.css" />
+<?php 
+common_css();
+common_js();
+?>
+<title>评价任务</title>
+</head>
+
+<body>
+
+<include file="Tpl/Common/header" />
+
+
+
+<div id="step_1" class="step">
+<div class="wj">
+<h2>评价任务</h2>
+<include file="Tpl/Common/left" />
+</div>
+<div class="wj1">
+
+<div>
+<form action="{:U('TaskComment/publisherAddComment')}" class="ajax" reurl="{:U('Task/joinHand',array('task'=>$task_data[id]))}">
+
+<input type="hidden" name="joinid" value="{$join_data.id}"/>
+<table  class="list">
+<tr>
+<th>任务</th>
+<td>{$task_data.title}</td>
+
+</tr>
+
+<tr>
+<th>会员</th>
+<td>{$join_data.user_data.realname}</td>
+</tr>
+
+
+
+
+
+<tr>
+<th>评语</th>
+<td>
+
+<textarea name="content"></textarea>
+
+
+</td>
+
+</tr>
+
+
+<tr>
+<th>评分</th>
+<td>
+
+<input  type="radio" name="star" value="1"/>1星
+&nbsp;<input  type="radio" name="star" value="2"/>2星
+&nbsp;<input  type="radio" name="star" value="3"/>3星
+&nbsp;<input  type="radio" name="star" value="4"/>4星
+&nbsp;<input  type="radio" name="star" value='5' checked="checked"/>5星
+</td>
+
+</tr>
+
+<tr>
+<th></th>
+<td>
+
+<input  type="button" class="submit" value="提  交"/>
+</td>
+
+</tr>
+
+</table>
+</form>
+</div>
+
+
+</div>
+</div>
+
+<include file="Tpl/Common/footer" />
+</body>
+</html>

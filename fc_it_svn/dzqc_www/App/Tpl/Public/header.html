@@ -1,0 +1,41 @@
+<div class="navbar navbar-fixed-top">
+
+<div class="navbar-inner">
+
+<div class="container"><a class="btn btn-navbar"
+	data-toggle="collapse" data-target=".nav-collapse"> <span
+	class="icon-bar"></span> <span class="icon-bar"></span> <span
+	class="icon-bar"></span> </a> <a class="brand" href="#"><if
+	condition="$info['mobile'] neq null">学生端 <else />企业端</if> </a>
+
+<div class="nav-collapse">
+
+<ul class="nav pull-right">
+	<li><a href="#"><span class="badge badge-warning">7</span></a></li>
+
+	<li class="divider-vertical"></li>
+
+	<li class="dropdown"><a data-toggle="dropdown"
+		class="dropdown-toggle " href="#"> {$info.username} <b
+		class="caret"></b> </a>
+
+	<ul class="dropdown-menu">
+		<li><a href="./account.html"><i class="icon-user"></i>
+		{$info['username']}</a></li>
+
+		<li><a href="{:U('User/modifyPwd')}"><i class="icon-lock"></i>
+		更改密码</a></li>
+
+		<li class="divider"></li>
+
+		<li><a href="{:U('User/logout')}"><i class="icon-off"></i> 退出</a>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+</div>
+<!-- /nav-collapse --></div>
+<!-- /container --></div>
+<!-- /navbar-inner --></div>
+<!-- /navbar -->

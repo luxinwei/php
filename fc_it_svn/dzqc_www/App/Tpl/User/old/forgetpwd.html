@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/forget.js"></script>
+<title>找回密码</title>
+</head>
+
+<body>
+<div class="lg1">
+<div class="lg2"><img src="__PUBLIC__/www/images/lg3.png" /></div>
+<div class="lg3">
+<a href="">了解更多</a>|
+<a href="">反馈建议</a>|
+<a href="">收藏我们</a>|
+<a href="">联系我们</a>
+</div>
+</div>
+<div class="wj">
+<h2>忘记密码</h2>
+</div>
+<div class="wj1">
+<ul class="wj2">
+<li class="wj3">1.验证账户</li>
+<li class="wj4">2.重置密码</li>
+</ul>
+<form action="{:U('User/forgetPwdAct')}" method="post" id="form" name="form" >
+<ul class="wj5">
+<li class="wj6"><input type="text" name="name" id="name" value="请输入手机号" id="name" onfocus="if(value=='请输入手机号'){value=''}" onblur="if(value==''){value='请输入手机号'}" /></li>
+<li class="wj7"><input type="text" name="verify" id="verify" value="请输入图片验证码" id="verify" onfocus="if(value=='请输入图片验证码'){value=''}" onblur="if(value==''){value='请输入图片验证码'}" />
+<img  style="cursor : pointer;" width="102px" height="48px"  src="{:U('Code/getVerify')}" alt="图片验证码" id="clickVerify" onclick="this.src=this.src+'?'"/></li>
+<li class="wj7"><input type="text" name="code" id="code" value="请输入发送验证码" id="code" onfocus="if(value=='请输入发送验证码'){value=''}" onblur="if(value==''){value='请输入发送验证码'}" />
+<input type="text" value="获取验证码" id="sendCode" class="wj77" /></li>
+<li class="wj8"><input type="submit" id="next" name="next" value="下一步" /></li>
+</ul>
+</form>
+</div>
+<include file="Common:footer" />
+</body>
+</html>

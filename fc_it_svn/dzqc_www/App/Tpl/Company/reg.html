@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld"  />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>注册</title>
+<meta content="">
+<meta content="" name="keywords">
+
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+
+<?php 
+common_css();
+common_js();
+?>
+<link href="__PUBLIC__/www/css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/www/js/company/reg.js"></script>
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
+</head>
+
+<body id="login_bg">
+	<div class="login_wrapper">
+		<div class="login_header">
+        	<a href="#"><img src="__PUBLIC__/www/img/login.png" width="285" height="62" alt="招聘" /></a>
+            <div id="cloud_s"><img src="__PUBLIC__/www/img/cloud_s.png" width="81" height="52" alt="cloud" /></div>
+            <div id="cloud_m"><img src="__PUBLIC__/www/img/cloud_m.png" width="136" height="95"  alt="cloud" /></div>
+        </div>
+    	
+		<div class="login_box">
+        	<form id="loginForm" method="post" action="{:U('Company/reg')}" class='ajax'>
+        		
+            	<input type="text" id="email" name="email" tabindex="1" placeholder="请输入常用邮箱地址" onfocus="if(placeholder=='请输入常用邮箱地址'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入常用邮箱地址'}" />
+                <span class="error" style="display:none;" id="beError">请输入有效的邮箱地址，如：vivi@lagou.com</span>
+                <input type="password" id="password" name="password" tabindex="2" placeholder="请输入密码" onfocus="if(placeholder=='请输入密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请输入密码'}" />
+            	<span class="error" style="display:none;" id="peError">请输入6-16位密码，字母区分大小写</span>
+            	<input type="password" id="password" name="password2" tabindex="3" placeholder="请确认密码" onfocus="if(placeholder=='请确认密码'){placeholder=''}" onblur="if(placeholder==''){placeholder='请确认密码'}" />
+            	<span class="error" style="display:none;" id="teError">2次密码输入不一致</span>
+            	<label class="fl registerJianJu" for="checkbox">
+            		<input type="checkbox" id="checkbox" name="checkbox" checked="checked"  class="checkbox valid" />我已阅读并同意<a href="h/privacy.html" target="_blank">《用户协议》</a>
+           		</label>
+                <input type="button" id="submitLogin" class='submit' value="注 &nbsp; &nbsp; 册" />
+               
+            </form>
+            <div class="login_right">
+            	<div>已有帐号</div>
+            	<a  href="{:U('Company/log')}"  class="registor_now">直接登录</a>
+                <div class="login_others">使用以下帐号直接登录:</div>
+                <a  href="h/ologin/auth/sina.html"  target="_blank" class="icon_wb" title="使用新浪微博帐号登录"></a>
+               	<a  href="h/ologin/auth/qq.html"  class="icon_qq" target="_blank" title="使用腾讯QQ帐号登录" ></a>
+            </div>
+        </div>
+        <div class="login_box_btm"></div>
+    </div>
+   
+</body>
+</html>

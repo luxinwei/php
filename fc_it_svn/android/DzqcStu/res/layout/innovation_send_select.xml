@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rlStudentCheck"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/cbx_studentType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/checkbox_style"
+            android:checked="false"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tvStudentType"
+            style="@style/tvSendTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/cbx_studentType"
+            android:text="@string/innovation_send_student_limit" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+
+    <LinearLayout
+        android:id="@+id/liStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvSchoolSelect"
+                style="@style/tvPublistContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/innovation_school_check" />
+
+            <TextView
+                android:id="@+id/tv_SelectSchools"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvSchoolSelect"
+                android:text="" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imgSchoolGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/approve_select_icon" />
+
+            <TextView
+                android:id="@+id/tvAlreadySchool"
+                style="@style/tvSchoolAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/imgSchoolGo"
+                android:background="@drawable/tv_bord_style"
+                android:text="@string/innovation_school_already"
+                android:textColor="@color/GRB2" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvMajorSelect"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/innovation_major_check" />
+
+            <TextView
+                android:id="@+id/tv_SelectMajors"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvMajorSelect"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/imgMajorGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/approve_select_icon" />
+
+            <TextView
+                android:id="@+id/tvAlreadyMajor"
+                style="@style/tvSchoolAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/imgMajorGo"
+                android:background="@drawable/tv_bord_style"
+                android:text="@string/innovation_major_already"
+                android:textColor="@color/GRB2" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <include layout="@layout/line_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvGradeSelect"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/innovation_grade_check" />
+
+            <TextView
+                android:id="@+id/tv_SelectGrades"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvGradeSelect"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/imgGradeGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/approve_select_icon" />
+
+            <TextView
+                android:id="@+id/tvAlreadyGrade"
+                style="@style/tv_mine_work_status_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/imgGradeGo"
+                android:background="@drawable/tv_bord_style"
+                android:text="@string/innovation_grade_already"
+                android:textColor="@color/GRB2"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_view" />
+
+    <RelativeLayout
+        android:id="@+id/rlEnterpriseCheck"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" 
+        >
+
+        <CheckBox
+            android:id="@+id/cbx_enterpriseType"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/checkbox_style"
+            android:button="@null" 
+             android:checked="false"/>
+
+        <TextView
+            style="@style/tvSendTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/cbx_enterpriseType"
+            android:text="@string/innovation_send_enterprise_limit" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_view" />
+
+    <RelativeLayout
+        android:id="@+id/rlEnterprise"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvEnterpriseType"
+            style="@style/tv_mine_work_status_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="企业类型选择" />
+
+        <TextView
+            android:id="@+id/tv_SelectEnterprise"
+            style="@style/tv_mine_work_status_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvEnterpriseType"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imgEnterpriseGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/approve_select_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvCompletedAction"
+        style="@style/loginStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/user_login_btn"
+        android:text="@string/forget_pwd_complete" />
+
+</LinearLayout>

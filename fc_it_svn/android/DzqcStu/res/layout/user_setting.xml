@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/GRB10">
+
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+     
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_userBasicInfo"
+                android:layout_width="match_parent"
+               android:layout_height="48dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="1dp"
+                android:background="@color/GRB6" >
+
+                <TextView
+                    android:id="@+id/tv_basicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="新消息提醒" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style"/>
+
+                <ImageView
+                    android:id="@+id/img_basicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:src="@drawable/approve_select_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                 android:id="@+id/rl_userSafe"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/GRB6" 
+                >
+
+                <TextView
+                    android:id="@+id/tv_contactInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="修改密码" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style"/>
+
+                <ImageView
+                    android:id="@+id/img_contactInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                     android:visibility="gone"
+                    android:src="@drawable/approve_select_icon" />
+            </RelativeLayout>
+
+             <RelativeLayout
+                   android:id="@+id/rl_userOnSchool"
+                android:layout_width="match_parent"
+               android:layout_height="48dp"
+                android:background="@color/GRB6" 
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_inSchoolInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="意见反馈" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style"/>
+
+                <ImageView
+                    android:id="@+id/img_inSchoolInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/approve_select_icon" />
+
+            </RelativeLayout>
+
+             <RelativeLayout
+                   android:id="@+id/rl_userPatform"
+                android:layout_width="match_parent"
+               android:layout_height="48dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/GRB6"  >
+
+                <TextView
+                    android:id="@+id/tv_managerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="关于我们"
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style" />
+
+                <ImageView
+                    android:id="@+id/img_managerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/approve_select_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                  android:id="@+id/rl_userResume"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/GRB6" 
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_myDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="清理缓存" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style"/>
+
+                <ImageView
+                    android:id="@+id/img_myDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/approve_select_icon" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                  android:id="@+id/rl_NewsApp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/GRB6" 
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_NewsApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="检查新版本更新" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tv_mine_username_style"/>
+
+                <ImageView
+                    android:id="@+id/img_NewsApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/approve_select_icon" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                  android:id="@+id/rl_userExit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/GRB6" 
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="退出登录" 
+                     android:layout_marginLeft="15dp"
+                     style="@style/tvExit"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

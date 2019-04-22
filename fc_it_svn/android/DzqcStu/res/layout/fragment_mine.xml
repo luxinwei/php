@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/navigation_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_userPic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/mydefault" />
+
+                <ImageView
+                    android:id="@+id/img_userCertification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_userPic"
+                    android:layout_marginLeft="-18dp"
+                    android:layout_marginTop="-18dp"
+                    android:layout_toRightOf="@id/img_userPic"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_userPic"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_userName"
+                            style="@style/tvMyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:text="@string/no_info" />
+
+                        <ImageView
+                            android:id="@+id/img_Sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_userMoney"
+                        style="@style/tv_mine_usermoney_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/tv_line"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/no_info" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_certificationGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:id="@+id/rlJoining"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/entered_for" />
+
+                <TextView
+                    android:id="@+id/tv_publishWork"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_Pic"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_worked" />
+
+                <ImageView
+                    android:id="@+id/img_alreadyWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+
+                <TextView
+                    android:id="@+id/tv_beginAccount"
+                    style="@style/tvCommentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_alreadyWork"
+                    android:gravity="center_vertical"
+                    android:text="17" />
+            </RelativeLayout>
+
+ <include layout="@layout/line_view" />
+            <RelativeLayout
+                android:id="@+id/rlDoing"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Picing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ongoing" />
+
+                <TextView
+                    android:id="@+id/tv_publishing"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_Picing"
+                    android:text="@string/mine_working" />
+
+                <ImageView
+                    android:id="@+id/img_Working"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+
+                <TextView
+                    android:id="@+id/tv_dongingAccount"
+                    style="@style/tvCommentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_Working"
+                    android:text="10" />
+            </RelativeLayout>
+
+           <include layout="@layout/line_view" />
+
+            <RelativeLayout
+                android:id="@+id/rlOver"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_PicOver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/has_ended" />
+
+                <TextView
+                    android:id="@+id/tv_overWork"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_PicOver"
+                    android:text="@string/mine_work_over" />
+
+                <ImageView
+                    android:id="@+id/img_overWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+
+                <TextView
+                    android:id="@+id/tv_overAccount"
+                    style="@style/tvCommentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_overWork"
+                    android:text="17" />
+            </RelativeLayout>
+
+          <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:id="@+id/rlHistoryJob"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_alreadySubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/delivered" />
+
+                <TextView
+                    android:id="@+id/tv_submitPosition"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_alreadySubmit"
+                    android:text="@string/mine_submit_position" />
+
+                <ImageView
+                    android:id="@+id/img_submitPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+
+                <TextView
+                    android:id="@+id/tv_SubmitAccount"
+                    style="@style/tvCommentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_submitPosition"
+                    android:text="17" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:id="@+id/rlMyInnovation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_myInnovation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/my_business" />
+
+                <TextView
+                    android:id="@+id/tv_myInnovation"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_myInnovation"
+                    android:text="@string/mine_innovation" />
+
+                <ImageView
+                    android:id="@+id/img_myInnovationGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+
+                <TextView
+                    android:id="@+id/tv_myInnovationSum"
+                    style="@style/tvCommentHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_myInnovationGo"
+                    android:text="17" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_message"
+                    android:text="@string/mine_message" />
+
+                <ImageView
+                    android:id="@+id/img_messageGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+            </RelativeLayout>
+  <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:id="@+id/rlPayMoney"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/get_cash" />
+
+                <TextView
+                    android:id="@+id/tv_addMoney"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_money"
+                    android:text="@string/mine_money" />
+
+                <ImageView
+                    android:id="@+id/img_addMoneyGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+            </RelativeLayout>
+
+         <include layout="@layout/line_view_big" />
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/img_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/tv_setting"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/img_setting"
+                    android:text="@string/mine_setting" />
+
+                <ImageView
+                    android:id="@+id/img_settingGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/approve_select_icon" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_view_big" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

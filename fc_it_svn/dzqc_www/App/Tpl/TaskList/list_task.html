@@ -1,0 +1,158 @@
+﻿<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld" />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>前端开发全国-职位搜索-拉勾网-最专业的互联网招聘平台</title>
+
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+
+
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/style.css" />
+
+
+</head>
+<body>
+<div id="body">
+<include file="Public:w_header" />
+<div id="container">
+
+<div class="sidebar">
+<div id="options" class="greybg">
+<dl>
+	<dt>酬劳范围</dt>
+	<dd>
+	<div><a href="{:U('TaskList/listTask',array('task_money'=>1))}">0-1000</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_money'=>2))}">1k-3k</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_money'=>3))}">3k-5k</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_money'=>4))}">5k-8k</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_money'=>5))}">8k以上</a></div>
+
+	</dd>
+</dl>
+<dl>
+	<dt>任务周期</dt>
+	<dd>
+	<div><a href="{:U('TaskList/listTask',array('task_cycle'=>1))}">7天以内</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_cycle'=>2))}">7-15天</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_cycle'=>3))}">15-30天</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_cycle'=>4))}">30天以上</a></div>
+	</dd>
+</dl>
+<dl>
+	<dt>发布时间</dt>
+	<dd>
+	<div><a href="{:U('TaskList/listTask',array('task_time'=>1))}">今天</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_time'=>2))}">3天内</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_time'=>3))}">一周内</a></div>
+	<div><a href="{:U('TaskList/listTask',array('task_time'=>4))}">一月内</a></div>
+	</dd>
+</dl>
+</div>
+
+<!-- QQ群 --><!-- 对外合作广告位  --><!-- 	            <a href="http://www.osforce.cn/" target="_blank" class="partnersAd">
+	            	<img src="style/images/osf-lg.jpg" width="230" height="80" alt="开源力量"  />
+	            </a>
+	         --></div>
+
+<div class="content">
+<div id="search_box">
+<form id="searchForm" name="searchForm" action="{:U('TaskList/listTask')}" method="get">
+<input type="text" id="search_input" name="search_key" tabindex="1" value="前端开发"	placeholder="请输入职位名称，如：产品经理" /> 
+<input	type="submit" id="search_button" value="搜索" />
+</form>
+</div>
+<style>
+.ui-autocomplete {
+	width: 488px;
+	background: #fafafa !important;
+	position: relative;
+	z-index: 10;
+	border: 2px solid #91cebe;
+}
+
+.ui-autocomplete-category {
+	font-size: 16px;
+	color: #999;
+	width: 50px;
+	position: absolute;
+	z-index: 11;
+	right: 0px; /*top: 6px; */
+	text-align: center;
+	border-top: 1px dashed #e5e5e5;
+	padding: 5px 0;
+}
+
+.ui-menu-item {
+	*width: 439px;
+	vertical-align: middle;
+	position: relative;
+	margin: 0px;
+	margin-right: 50px !important;
+	background: #fff;
+	border-right: 1px dashed #ededed;
+}
+
+.ui-menu-item a {
+	display: block;
+	overflow: hidden;
+}
+</style>
+<script type="text/javascript" src="style/js/search.min.js"></script>
+<dl class="hotSearch">
+	<dt>热门搜索：</dt>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'Java'))}">Java</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'PHP'))}">PHP</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'Android'))}">Android</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'iOS'))}">iOS</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'前端'))}">前端</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'产品经理'))}">产品经理</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'UI'))}">UI</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'运营'))}">运营</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'BD'))}">BD</a></dd>
+	<dd><a href="{:U('TaskList/listTask',array('search_key'=>'实习'))}">实习</a></dd>
+</dl>
+
+<div id="tip_didi" class="dn"><span>亲，“嘀嘀打车”已更名为“滴滴打车”了哦，我们已帮您自动跳转~</span>
+<a href="javascript:;">我知道了</a></div>
+
+<ul class="hot_pos reset">
+	<volist name="list['rows']" id="vo" key="k">
+	<li class="clearfix">
+	<div class="hot_pos_l">
+	<div class="mb10"><a
+		href="{:U('TaskList/detailTask',array('id'=>$vo['id']))}"
+		target="_blank"><span class="c9"> {$vo.title|mb_substr= 0,
+	12, 'utf-8'}</span></a><span><em>{$vo.addtime|date="Y-m-d",###}</em></span></div>
+	<span>酬劳:<em class="c7">{$vo.pay_money|default=0}元</em></span> <span>已申请人数:<em
+		class="c7">{$vo.join_number|default=0}人</em></span> <br />
+	<span>任务周期：<em class="c7">{$vo.work_days|default=0}天</em></span></div>
+	<div class="hot_pos_r">
+	<div class="mb10 recompany"><a href="" target="_blank"><span>{$vo['publisherData']['companyname']}</span></a></div>
+	<span>领域: {$vo['publisherData']['industry']}</span></div>
+	</li>
+	</volist>
+
+</ul>
+<div class="Pagination">{$page}</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="footer2">
+<p><a href="">关于我们</a> |<a href=""> 企业合作 </a>| <a href="">服务条款</a> |
+<a href="">帮助中心</a> | <a href="">用户手册</a> <br />
+© 1998 - 2016 Inc. All Rights Reserved</p>
+</div>
+
+
+
+</body>
+</html>

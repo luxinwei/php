@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+<script id="allmobilize" charset="utf-8"
+	src="style/js/allmobilize.min.js"></script>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld" />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<meta property="qc:admins" content="23635710066417756375" />
+<meta content="" name="description">
+<meta content="" name="keywords">
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+
+
+<link rel="stylesheet" type="text/css"
+	href="__PUBLIC__/www/css/style.css" />
+
+
+</head>
+<body>
+<div id="body">
+<include file="Public:w_header" />
+<!-- end #header -->
+<div id="container">
+
+<dl class="job_detail">
+	<dt>
+	<h1 title="内容">{$info.position}</h1>
+	</dt>
+	<dd class="job_request"><span><if
+		condition="$info['state'] eq 3">月薪: <else />酬劳: </if><font
+		color="#FF00003">￥{$info.remuneration}</font></span> <span>工作性质：<font
+		color="#FF00003"> <if condition="$info['state'] eq 3">全职
+	<else />兼职 </if></font></span> <span> 所需人数：<font color="#FF00003">{$info.number}人</font></span>
+	<span> 行业：<font color="#FF00003">{$info.industry}</font></span> <br />
+	<span>发布人 : {$info['company']['companyname']}</span>
+	<div>发布时间：{$info.time|date="Y-m-d",###}</div>
+	</dd>
+	<dd class="job_bt">
+	<h3 class="description">职位描述</h3>
+	<p>{$info.responsibility}</p>
+	</dd>
+
+	<dd class="unresume">
+	<div>你可以下载大学生在线创新创业平台APP，投递简历 下载地址：http://www.nishisb.com</div>
+	</dd>
+
+</dl>
+
+</div>
+
+<!-------------------------------------弹窗lightbox  ----------------------------------------->
+
+
+
+
+
+
+<div class="clear"></div>
+<div class="footer2">
+<p><a href="">关于我们</a> |<a href=""> 企业合作 </a>| <a href="">服务条款</a> |
+<a href="">帮助中心</a> | <a href="">用户手册</a> <br />
+© 1998 - 2016 Inc. All Rights Reserved</p>
+</div>
+</body>
+</html>

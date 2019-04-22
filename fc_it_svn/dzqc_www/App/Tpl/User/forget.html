@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="alternate" media="handheld"  />
+<!-- end 云适配 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>忘记密码--验证账户</title>
+<meta content="">
+<meta content="" name="keywords">
+
+<meta name="baidu-site-verification" content="QIQ6KC1oZ6" />
+<?php 
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/forget.js"></script>
+
+<link rel="Shortcut Icon" href="h/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/zc.css"/>
+</head>
+
+<body id="login_bg">
+<div class="login_wrapper">
+		<div class="login_header">
+        	<a href="h/"><img src="__PUBLIC__/www/img/login.png" width="285" height="62" alt="招聘" /></a>
+            <div id="cloud_s"><img src="__PUBLIC__/www/img/cloud_s.png" width="81" height="52" alt="cloud" /></div>
+            <div id="cloud_m"><img src="__PUBLIC__/www/img/cloud_m.png" width="136" height="95"  alt="cloud" /></div>
+        </div>
+        <div class="login_box">
+        <ul class="wj2">
+<li class="wj3">1.验证账户</li>
+<li class="wj4">2.重置密码</li>
+</ul>
+<form action="{:U('User/forgetPwdAct')}" name="myform" id="myform" method="post">
+<ul class="wj5">
+<li class="wj6"><input type="text" name="name" id="name" value="请输入手机号" onfocus="if(value=='请输入手机号'){value=''}" onblur="if(value==''){value='请输入手机号'}"/></li>
+
+<li class="wj7"><input type="text" name="code" value="请输入验证码" id="smsCode" onfocus="if(value=='请输入验证码'){value=''}" onblur="if(value==''){value='请输入验证码'}"/>
+<input type="text" name="getSmsCode" value="获取验证码" id="getSmsCode" class="wj77"/ ></li>
+<li class="wj8"><input type="submit" name="next" value="下一步"  /></li>
+</ul></form>
+    </div>
+   
+</div>
+</body>
+</html>

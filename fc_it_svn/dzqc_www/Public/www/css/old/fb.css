@@ -1,0 +1,59 @@
+.fb{width:1080px;margin:0px auto;color:#c9c9c9;margin-top:15px}
+.fb a{color:#c9c9c9}
+.fb a:hover{color:#000;}
+.fb1{width:1080px;margin:30px auto;text-align:center}
+.fb2{background:#d5f0d6;height:330px;width:1080px;margin:0px auto; font-family: "微软雅黑";
+text-indent:20PX;}
+.fb3{font-size:18px;color:#000;line-height:50px;font-weight:normal}
+.fb4{width:448px;height:200px;background:#FFF;margin-left:350px;text-align:center}
+.fb5{height:100px;line-height:100px;color:#353535;font-size:18px;background:url(../images/fbrw.png)
+ no-repeat 46px center;border:1px #d5f0d6 solid}
+.fb6{height:100px;line-height:100px;color:#353535;font-size:18px;background:url(../images/fbzp.png)
+ no-repeat 46px center;position:relative;display:block}
+#fb8{width:300px;background:#FFF;position:absolute;right:0px;bottom:-152px}
+.fb9{height:75px;line-height:75px;color:#353535;font-size:18px;background:url(../images/fbzp1.png)
+ no-repeat 46px center;border:1px #d5f0d6 solid;}
+.fb7{width:1080px;margin:60px auto;line-height:30px;}
+/*发布需求*/
+.fxq{width:1080px;/*height:800px;*/border:1px #c9c9c9 solid;margin:0px auto;color:#a3a0a0;
+line-height:45px;position:relative;}
+
+.fxq1{color:#000;font-size:16px;line-height:50px}
+.fxq2{height:38px;border:1px #d0d5d1 solid;width:600px;margin-left:15px}
+.fxq3{height:38px;border:1px #d0d5d1 solid;width:300px;margin-left:15px}
+.fxq4{height:38px;border:1px #d0d5d1 solid;width:200px;margin-left:15px;margin-top:10px;}
+.fxq5{height:38px;width:90px;background:#5cd05c;color:#FFF}
+.fxq6{height:240px;width:600px;line-height:30px;margin-left:15px;background:none;}
+.fxq7{position:absolute;background:url(../images/yjms.png) no-repeat left top;width:370px;
+height:227px;right:90px;bottom:260px;overflow:hidden;line-height:30px;}
+.fxq7 p{margin-left:60px}
+.fxq8{line-height:60px;color:#000;font-size:16px;font-weight:bold}
+.fxq9{color:#26b525}
+.fxq10{color:#26b525;margin-left:50px}
+.fxq11{margin-top:60px;text-align:center;margin-bottom:50px}
+.fxq11 input{width:190px;height:40px;background:#26b525;margin-right:20px;color:#FFF;
+border-radius:5px;font-size:18px}
+/*推送范围*/
+.fts{width:1080px;min-height:600px;border:1px #d9dbd8 solid;margin:0px auto;color:#a3a0a0;
+line-height:45px;}
+.fts1{height:38px;border:1px #d0d5d1 solid;width:110px;margin-left:15px}
+.fts2{height:612px;width:1000px;border:1px #d9dbd8 solid;margin-left:15px;}
+.tsl{float:left;width:235px;background:#d6f0d5;height:612px}
+.tsl li{border-bottom:1px #e4f5e3 solid;
+background:url(../images/tsjt.png) no-repeat 200px center;height:50px;line-height:50px}
+.tsl li a{display:block;text-indent:24px;color:#000}
+.tsl li a:hover{background:#bcedbf;}
+.tsr{float:left;margin-left:20px;color:#000}
+.tsr1{font-size:18px;margin-left:20px;color:#858080}
+.tsr1 label{margin-right:20px;}
+/*推送范围*/
+.qrfb{/*height:328px;*/width:1068px;border:1px #d9dbd8 solid;line-height:30px;color:#767676;
+}
+.qrfb p{padding-left:12px}
+.qrfb1{font-size:16px;line-height:40px;color:#000;margin-top:10px}
+.qrfb2{font-size:16px;line-height:50px;border-top:1px #d9dbd8 solid;}
+.qrfb2 span{color:#000;}
+.qrfb3{min-height:208px;width:1068px;border:1px #d9dbd8 solid;margin-top:16px;color:#767676}
+.qrfb3 li{margin-left:12px}
+.qrfb3 span{color:#000}
+.qrfb3 font{font-size:50px;font-weight:bold}

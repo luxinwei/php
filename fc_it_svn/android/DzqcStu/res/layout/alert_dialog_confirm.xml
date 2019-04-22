@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/GRB6">
+
+    <TextView
+        android:id="@+id/tv_MessageTitle"
+        style="@style/tvPatformTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+         android:gravity="center"
+        android:text="提示" />
+
+    <TextView
+        android:id="@+id/tv_MessageContent"
+        style="@style/tvPublistContentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="弹窗内容，告知当前页面信息等" />
+
+   <include layout="@layout/line_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            style="@style/tvDialogConfirm"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>User Account - Bootstrap Admin</title>
+<?php
+common_css();
+common_js();
+?>
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="__PUBLIC__/www/css/bootstrap.min.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link  href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/font-awesome.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/adminia.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/adminia-responsive.css" rel="stylesheet" />
+<link href="__PUBLIC__/www/css/pages/plans.css" rel="stylesheet" />
+<script  src="__PUBLIC__/www/js/company/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/Comauth/auth.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/Comauth/auths.js"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<!-- 头部 -->
+<include file="Common:header" />
+
+<!-- 头部 -->
+<include file="Common:left" />
+<!-- /span3 -->
+
+<div class="span9">
+<h1 class="page-title"><i class="icon-th-large"></i> User Account</h1>
+<div class="row">
+<div class="span9">
+<div class="widget">
+<div class="widget-header">
+<h3>实名认证</h3>
+</div>
+<!-- /widget-header -->
+<div class="widget-content">
+<div class="tabbable"><br />
+<div class="tabimg"><img src="__PUBLIC__/www/img/step1.png" /></div>
+<div class="widget-content smr8">
+<ul>
+	<li class="smr9">注意事项</li>
+	<li>以下所需上传的电子版资质文件/图片仅支持JPG\PNG\GIF格式图片，大小请控制在1M之内。</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane active" id="1">
+<form id="edit-profile" class="form-horizontal" action="{:U('Comauth/realNameAuth')}" method="post" />
+<fieldset>
+<h3>公司信息</h3>
+<div class="control-group"><label class="control-label"
+	for="username">公司名称</label>
+<div class="controls"><input type="text"class="input-large disabled" id="companyname" name="companyname" value=""  />
+</div>
+<!-- /controls --></div>
+<!-- /control-group -->
+<div class="control-group"><label class="control-label"
+	for="firstname">营业执照注册号</label>
+<div class="controls"><input type="text" class="input-large"
+	id="reg_number" name="reg_number" value="" /></div>
+<!-- /controls --></div>
+<!-- /control-group -->
+<div class="control-group"><label class="control-label"
+	for="lastname">注册资金</label>
+<div class="controls"><input type="text" class="input-large"
+	id="capital" name="capital" value="" /></div>
+<!-- /controls --></div>
+<!-- /control-group -->
+<div class="control-group"><label class="control-label">法人姓名</label>
+<div class="controls"><input type="text" class="input-large"
+	id="lega_lperson" name="lega_lperson" value="" /></div>
+<!-- /controls --></div>
+<!-- /control-group -->
+<div class="control-group"><label class="control-label">公司行业</label>
+<div class="controls"><select name="industry">
+	<option value="IT">IT</option>
+	<option value="教育">教育</option>
+</select></div>
+<!-- /controls --></div>
+<div class="control-group"><label class="control-label">公司地址</label>
+<div class="controls"><select name="seat_of[]" class="input-mini">
+	<option value="河南省">河南省</option>
+	<option value="河北省">河北省</option>
+</select> <select name="seat_of[]" class="input-mini">
+	<option value="郑州市">郑州市</option>
+	<option>荥阳市省</option>
+</select> <select name="seat_of[]" class="input-mini">
+	<option value="金水区">金水区</option>
+	<option value="中原区">中原区</option>
+</select> <br />
+<br />
+<input type="text" class="input-large" id="firstname" name="seat_of[]" value="详细街道信息"
+ onfocus="if(value=='详细街道信息'){value=''}" onblur="if(value==''){value='详细街道信息'}" /></div>
+</div>
+<h3>运营者信息</h3>
+<div class="control-group"><label class="control-label">运营者姓名</label>
+<div class="controls"><input type="text" class="input-large" id="card_name" name="card_name"
+	value="" /></div>
+<!-- /controls --></div>
+<div class="control-group"><label class="control-label">运营者身份账号</label>
+<div class="controls"><input type="text" class="input-large" id="id_card_number"
+	 name="id_card_number" value="" /></div>
+<!-- /controls --></div>
+<div class="control-group"><label class="control-label">运营者手机号码</label>
+<div class="controls"><input type="text" class="input-large" id="operators_phone" name="operators_phone"
+	value="" /></div>
+<!-- /controls --></div>
+<!--
+<script type="text/javascript">
+	function show(a) {
+		document.getElementById(a).style.display = "block";
+
+	}
+</script>-->
+<h3>资质上传</h3>
+
+<div class="control-group"><label class="control-label">营业执照上传</label>
+<div class="controls">
+<button type="button" id="getSmsCode" class='upload1'>上传附件</button>
+<input  type="hidden"  id="file_key_0" name="companyimage"   />
+<input  type="hidden"  id="file_name_0" name="companyimages"   />
+<br />
+请确保图片清晰，营业执照上文字可辨。
+<a href="#" id="zp">点击查看合照实例</a>
+<div id="smr1555"><img id="img_0" src="" width="100px" height="50px"/></div>
+</div>
+
+<!-- /controls --></div>
+<div class="control-group"><label class="control-label">运营者身份证上传</label>
+<div class="controls">
+<button type="button" id="getSmsCode" class='upload2'>上传附件</button>
+<input  type="hidden"  id="file_key_1" name="card_image"   />
+<input  type="hidden"  id="file_name_1" name="card_images"   />
+<br />
+请确保图片清晰，身份证上文字可辨。
+<a  href="#" id="zp1">点击查看合照实例</a>
+<div id="smr155"><img width="100px" height="50px" id="img_1" src="" /></div>
+</div>
+<!-- /controls --></div>
+
+<div class="control-group"><label class="control-label">合作盖章协议上传</label>
+<div class="controls">
+<button type="button" id="getSmsCode" class='upload3'>上传附件</button>
+<input  type="hidden"  id="file_key_2" name="seal_picture"   />
+<input  type="hidden"  id="file_name_2" name="seal_pictures"   />
+<br />
+请确保图片清晰，合作协议上文字可辨。
+<a href="#" id="zp2">点击查看合照实例</a>
+<div id="smr15" ><img id="img_2" src="" width="100px" height="50px"/></div>
+</div>
+<!-- /controls --></div>
+
+<!-- /form-actions -->
+<div class="tab-content xyb"><input type="submit" id="sub" value="提交">
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- /widget-content --></div>
+<!-- /widget --></div>
+<!-- /span9 --></div>
+<!-- /row --></div>
+<!-- /span9 --></div>
+<!-- /row --></div>
+<!-- /container --></div>
+<!-- /content -->
+
+<!-- 头部 -->
+<include file="Common:footer" />
+<!-- /footer -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__PUBLIC__/www/js/jquery-1.7.2.min.js"></script>
+<script src="__PUBLIC__/www/js/bootstrap.js"></script>
+</body>
+</html>

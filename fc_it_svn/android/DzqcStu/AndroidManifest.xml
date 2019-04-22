@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dzqc.student"
+    android:versionCode="1"
+    android:versionName="1.01" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- bugly崩溃日志权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 极光推送 Required -->
+    <permission
+        android:name="com.dzqc.student.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- 极光推送 Required -->
+    <uses-permission android:name="com.dzqc.student.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 极光推送 Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <!-- 自动适应屏幕 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.dzqc.student.config.DzqcStu"
+        android:allowBackup="true"
+        android:icon="@drawable/ws_launcher"
+        android:label="@string/app_display_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.dzqc.student.ui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 起始页 -->
+        <activity android:name=".ui.UserLogin"></activity>
+        
+        <!-- 主页面 -->
+        <activity android:name=".ui.MainActivity" >
+        </activity>
+
+        <!-- 登录注册 -->
+        <activity android:name=".ui.UserRegister" />
+        <activity android:name=".ui.PasswordForget" >
+        </activity>
+        <activity android:name=".ui.PasswordReSetting" >
+        </activity>
+
+        <!-- 起始页 -->
+        <activity android:name=".ui.InitPager" >
+        </activity>
+
+        <!-- 认证页面 -->
+        <activity android:name=".ui.UserCertificationState" >
+        </activity>
+        <activity android:name=".ui.UserCertificationNotice" >
+        </activity>
+        <activity android:name=".ui.UserCertification" >
+        </activity>
+
+        <!-- 我的 -->
+        <activity android:name=".ui.mine.PersonalInfoActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserContactModifyPhone" >
+        </activity>
+        <activity android:name=".ui.mine.UserContactModifyEmail" >
+        </activity>
+        <activity android:name=".ui.mine.UserContactActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserBasicActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserSchoolInfoActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserPatformInfoActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserResumeActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserSayingActivity" >
+        </activity>
+         <activity android:name=".ui.mine.MyInnovationList" >
+        </activity>
+        <activity android:name=".ui.mine.MyJobList" >
+        </activity>
+          <activity android:name=".ui.mine.MyWorkStateList" >
+        </activity>
+          <activity android:name=".ui.mine.UserSetActivity" >
+        </activity>
+        <activity android:name=".ui.mine.UserModifyPwd" >
+        </activity>
+        
+        <!-- 支付 -->
+        <activity android:name="com.dzqc.student.alipay.PayDemoActivity"></activity>
+
+        <!-- 任务 -->
+        <activity android:name=".ui.work.WorkDetailActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkCompanyInfoActivity" >
+        </activity>
+        <activity android:name=".ui.work.ComCommentListActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkCommentActivity" >
+        </activity>
+        <activity android:name=".ui.work.WorkHistoryActivity" >
+        </activity>
+        <!-- 推荐 -->
+        <activity android:name=".ui.index.IndexDetailActivity" >
+        </activity>
+          <activity android:name=".ui.index.IndexUserInfoActivity" >
+        </activity>
+        
+        <!-- 双创 -->
+        <activity android:name=".ui.innovation.InnovationPublishActivity" >
+        </activity>
+        <activity android:name=".ui.innovation.InnovationSendSelectActivity" >
+        </activity>
+        <activity android:name=".ui.innovation.InnovationSchoolAddActivity" >
+        </activity>
+        <activity android:name=".ui.innovation.InnovationSchoolListActivity" >
+        </activity>
+        <activity android:name=".ui.innovation.InnovationGradeListActivity" >
+        </activity>
+        <activity android:name=".ui.innovation.InnovationAlreadySchool" >
+        </activity>
+         <activity android:name=".ui.innovation.InnovationMajorListActivity" >
+        </activity>
+         <activity android:name=".ui.innovation.InnovationDetailActivity" >
+        </activity>
+          <activity android:name=".ui.innovation.UserInfoActivity" >
+        </activity>
+         
+        <!-- 第三方登录配置 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+      <!--   <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4eaee02c527015373b000003" >
+        </meta-data> -->
+         <meta-data android:name="UMENG_APPKEY"
+            android:value="574d4fec67e58ee22d0017a2"/>
+
+        <activity
+            android:name="com.dzqc.student.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.dzqc.student.wxapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 激光推送配置 -->
+        <!-- Required SDK 核心功能 -->
+        <!-- option since 2.0.5 可配置PushService，DaemonService,PushReceiver,AlarmReceiver的android:process参数 将JPush相关组件设置为一个独立进程 -->
+        <!-- 如：android:process=":remote" -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- For test only 测试的主程序 -->
+        <!-- For test only 测试高级功能 -->
+        <!-- For test only 测试设置 -->
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity
+            android:name="com.dzqc.student.receiver.TestActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.dzqc.student" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+
+                <category android:name="com.dzqc.student" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.dzqc.student" />
+            </intent-filter>
+        </activity>
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.dzqc.student.receiver.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.dzqc.student" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。 -->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="6f3162ba875651d582ad0c9e" />
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/cycx.css"/>
+<?php 
+common_css();
+common_js();
+?>
+<script type="text/javascript" src="__PUBLIC__/www/js/ideas/detail.js"></script>
+<title>大学生在线创新创业平台</title>
+</head>
+
+<body bgcolor="#eef6f0">
+<include file="Common:header" />
+<div class="cxxq">
+<a href="">任务  ></a><a href="">任务详情 ></a>
+</div>
+<div class="cxxq1">
+<h3>一个校园二手市场APP的小想法！</h3>
+<ul class="cxxq3">
+<li class="cxxq2"><img src="__PUBLIC__/www/images/grtx.png" /><span>{$bean.username}</span></li>
+<li class="cxxq4">
+<p>{$bean.title}</p>
+<p>{$bean.desc}</p>
+</li>
+<li class="cxxq5">看完觉得不错赞一个</li>
+<li class="cxxq5"><a href="#" onclick="agree({$bean.id})" class="cxxq6"></a></li>
+</ul>
+</div>
+<include file="Common:footer" />
+</body>
+</html>

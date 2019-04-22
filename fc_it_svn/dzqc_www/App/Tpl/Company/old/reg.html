@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<script type="text/javascript" src="__PUBLIC__/www/js/company/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/company/reg.js"></script>
+<title>大学生在线创新创业平台</title>
+</head>
+
+<body>
+<div class="lg1">
+<div class="lg2"><img src="__PUBLIC__/www/images/lg3.png" /></div>
+<div class="lg3">
+
+<a href="">了解更多</a>|
+<a href="">反馈建议</a>|
+<a href="">收藏我们</a>|
+<a href="">联系我们</a>
+
+</div>
+</div>
+<div class="lg4">
+<div class="lg5">
+
+<div id="menu">
+
+      <ul id="nav">
+        <li class="zc1"><a href="#" class="">邮箱注册<span >（企业端）</span></a></li> 
+      </ul>
+      <div class="tag" style="display:block">
+       <form action="{:U('Company/reg')}" method="post" name="form1">  
+      <ul class="zc">
+      <li class="zc3"><input type="text"  value="请输入要注册的邮箱" name="email"  onfocus="if(value=='请输入要注册的邮箱'){value=''}" onblur="if(value==''){value='请输入要注册的邮箱'}"/></li>
+       <li class="zc3"><input type="password"  value="请设置密码" name="password"  onfocus="if(value=='请设置密码'){value=''}" onblur="if(value==''){value='请设置密码'}"/></li>
+       <li class="zc3"><input type="password"  value="请在次设置密码" name="password2"  onfocus="if(value=='请在次设置密码'){value=''}" onblur="if(value==''){value='请在次设置密码'}"/></li>
+      <li class="zc4" id="image"><input type="text"  value="请输入图片验证码" name="verify"   onfocus="if(value=='请输入图片验证码'){value=''}" onblur="if(value==''){value='请输入图片验证码'}"/>
+   	<img  id="verify"  src="{:U('Code/getVerify')}?23123" onclick="this.src=this.src+'?'+Math.random()"/></li>
+    <!--   <li class="zc4"><input type="text"  value="请输入图片验证码" name=""  / >
+      <a href="">获取验证码</a></li>--> 
+      <li class="lg11"><input name="" type="checkbox" value="" />
+      我已经阅读并同意<span>《用户协议》</span></li>
+      <li><input type="submit" name="" value="注册"  class="lg10"/></li>
+      <li  class="zc5"><a href="{:U('Company/log')}" >登录</a></li>
+      </ul>
+      </form>
+      </div>
+  </div>
+        <script>
+var tabs=function(){
+    function tag(name,elem){
+        return (elem||document).getElementsByTagName(name);
+    }
+    //获得相应ID的元素
+    function id(name){
+        return document.getElementById(name);
+    }
+    function first(elem){
+        elem=elem.firstChild;
+        return elem&&elem.nodeType==1? elem:next(elem);
+    }
+    function next(elem){
+        do{
+            elem=elem.nextSibling;  
+        }while(
+            elem&&elem.nodeType!=1  
+        )
+        return elem;
+    }
+    return {
+        set:function(elemId,tabId){
+            var elem=tag("li",id(elemId));
+            var tabs=tag("div",id(tabId));
+            var listNum=elem.length;
+            var tabNum=tabs.length;
+            for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selected";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                   })(i)
+            }
+        }
+    }
+}();
+tabs.set("nav","menu_con");//执行
+$(function(){
+	$('#verify').attr("src",$('#verify').attr("src")+Math.random())
+	
+})
+        </script>
+
+<div class="lg14">
+  <ul>
+<li class="lg15">用社交账号登录</li>
+<li class="lg16">
+<a href=""><img src="__PUBLIC__/www/images/wx.png" /></a>
+<a href=""><img src="__PUBLIC__/www/images/qq.png" /></a>
+<a href=""><img src="__PUBLIC__/www/images/wb.png" /></a>
+</li>
+<li class="lg17"><img src="__PUBLIC__/www/images/erweima.png" /></li>
+<li class="lg18">扫一扫下载客户端</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+  <p><a href="">关于我们</a> |<a href=""> 企业合作 </a>| <a href="">服务条款</a> | <a href="">帮助中心</a> | <a href="">用户手册</a></p>
+<p>© 1998 - 2016  Inc. All Rights Reserved</p>
+</div>
+</body>
+</html>

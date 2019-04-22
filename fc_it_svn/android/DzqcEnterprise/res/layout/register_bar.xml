@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/deepgray" 
+    android:gravity="center_vertical">
+
+   <ImageView
+        android:id="@+id/img_registerBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/reg_back" />
+
+    <View android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="@drawable/reg_back_line"/>
+    
+    <TextView
+        android:id="@+id/tvHeadInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="@string/user_register" 
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+      <View android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="@string/certificate_cancer" 
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+</LinearLayout>

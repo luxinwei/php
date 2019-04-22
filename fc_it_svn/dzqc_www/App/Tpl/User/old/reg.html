@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/www/css/login.css"/>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/www/js/user/reg.js"></script>
+<title>注册</title>
+</head>
+
+<body>
+<div class="lg1">
+<div class="lg2"><img src="__PUBLIC__/www/images/lg3.png" /></div>
+<div class="lg3">
+
+<a href="">了解更多</a>|
+<a href="">反馈建议</a>|
+<a href="">收藏我们</a>|
+<a href="">联系我们</a>
+
+</div>
+</div>
+<div class="lg4">
+<div class="lg5">
+
+<div id="menu">
+
+      <ul id="nav">
+        <li class="zc1"><a href="#" class="selected">手机号注册<span>（学生端）</span></a></li>
+        <li class="zc2"><a href="#" class="">邮箱注册<span >（企业端）</span></a></li> 
+      </ul>
+
+    <div id="menu_con">
+        <div class="tag" style="display:block">
+            <form action="{:U('User/regAct')}" method="post" name="form1" id="form1" >  
+      <ul class="zc">
+      <li class="zc3"><input type="text"  value="请输入要注册的手机号码" name="mobile" id="mobile" onfocus="if(value=='请输入要注册的手机号码'){value=''}" onblur="if(value==''){value='请输入要注册的手机号码'}"  /></li>
+      <li class="zc4"><input type="text"  value="请输入验证码" id="smsCode" name="verify" onfocus="if(value=='请输入验证码'){value=''}" onblur="if(value==''){value='请输入验证码'}"  />
+      <input type="button" id="getSmsCode" value="获取验证码"  class="zc44"/></li>
+      <li class="zc3"><input type="password"  value="请输入密码" name="password" onfocus="if(value=='请输入密码'){value=''}" onblur="if(value==''){value='请输入密码'}" /></li>
+      <li class="zc3"><input type="password"  value="请确认密码" name="repassword" onfocus="if(value=='请确认密码'){value=''}" onblur="if(value==''){value='请确认密码'}" /></li>
+      <li class="lg11"><input name="agreement" type="checkbox" checked="checked" value="1" />
+      我已经阅读并同意<span>《用户协议》</span></li>
+      <li><input type="submit" id="submit" name="submit" value="注册"  class="lg10"/></li>
+      <li  class="zc5"><a href="{:U('User/login')}" >登录</a></li>
+      </ul>
+      </form>
+      </div>
+      <div class="tag" style="display:none">
+                  <form action="" method="post" name="form1">  
+      <ul class="zc">
+      <li class="zc3"><input type="text"  value="请输入要注册的邮箱" name="" /></li>
+      <li class="zc4"><input type="text"  value="请输入图片验证码" name=""  / >
+      <img src="__PUBLIC__/www/images/zc2.png" /></li>
+      <li class="zc4"><input type="text"  value="请输入图片验证码" name=""  / >
+      <a href="">获取验证码</a></li>
+      <li class="zc3"><input type="text"  value="请设置密码" name="" /></li>
+      <li class="lg11"><input name="" type="checkbox" value="" />
+      我已经阅读并同意<span>《用户协议》</span></li>
+      <li><input type="submit" name="" value="注册"  class="lg10"/></li>
+      <li  class="zc5"><a href="" >登录</a></li>
+      </ul>
+      </form>
+      </div>
+      </div>
+  </div>
+        <script>
+var tabs=function(){
+    function tag(name,elem){
+        return (elem||document).getElementsByTagName(name);
+    }
+    //获得相应ID的元素
+    function id(name){
+        return document.getElementById(name);
+    }
+    function first(elem){
+        elem=elem.firstChild;
+        return elem&&elem.nodeType==1? elem:next(elem);
+    }
+    function next(elem){
+        do{
+            elem=elem.nextSibling;  
+        }while(
+            elem&&elem.nodeType!=1  
+        )
+        return elem;
+    }
+    return {
+        set:function(elemId,tabId){
+            var elem=tag("li",id(elemId));
+            var tabs=tag("div",id(tabId));
+            var listNum=elem.length;
+            var tabNum=tabs.length;
+            for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selected";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                    })(i)
+            }
+        }
+    }
+}();
+tabs.set("nav","menu_con");//执行
+        </script>
+
+<div class="lg14">
+  <ul>
+<li class="lg15">用社交账号登录</li>
+<li class="lg16">
+<a href=""><img src="__PUBLIC__/www/images/wx.png" /></a>
+<a href=""><img src="__PUBLIC__/www/images/qq.png" /></a>
+<a href=""><img src="__PUBLIC__/www/images/wb.png" /></a>
+</li>
+<li class="lg17"><img src="__PUBLIC__/www/images/erweima.png" /></li>
+<li class="lg18">扫一扫下载客户端</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<include file="Common:footer" />
+</body>
+</html>

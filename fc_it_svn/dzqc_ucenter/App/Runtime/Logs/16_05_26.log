@@ -1,0 +1,1027 @@
+[ 2016-05-26T09:53:15+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004246s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004357s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006719s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.017922s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='123@qq.com' ) LIMIT 1   [ RunTime:0.000822s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T09:58:01+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005549s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003331s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.011692s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='dzqc@qq.com' ) LIMIT 1   [ RunTime:0.000412s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T09:58:01+08:00 ] 192.168.1.66 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003188s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008157s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='dzqc@qq.com' ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'dzqc@qq.com','dzqc@qq.com','a8ded4a751655566383c21eed1ee1c42',1464227881) [ RunTime:0.012876s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='dzqc@qq.com' or mobile='dzqc@qq.com' ) LIMIT 1   [ RunTime:0.001496s ]
+
+[ 2016-05-26T09:58:01+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002478s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002559s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002056s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008600s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='dzqc@qq.com' or mobile='dzqc@qq.com' ) LIMIT 1   [ RunTime:0.000473s ]
+
+[ 2016-05-26T09:58:33+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005980s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006285s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003652s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009103s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='dzqc@qq.com' or mobile='dzqc@qq.com' ) LIMIT 1   [ RunTime:0.000509s ]
+
+[ 2016-05-26T10:36:47+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002714s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002827s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.012229s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000633s ]
+
+[ 2016-05-26T11:39:15+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002371s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002445s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002325s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004618s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2987910254@qq.com' ) LIMIT 1   [ RunTime:0.000325s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T11:39:18+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001628s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004533s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2987910254@qq.com' ) LIMIT 1   [ RunTime:0.000283s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T11:39:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002034s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002094s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006213s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2987910254@qq.com' ) LIMIT 1   [ RunTime:0.000393s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T11:41:20+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002785s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005372s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000873s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T11:41:21+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001464s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004771s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'2509170522@qq.com','2509170522@qq.com','7542f67397e9e20b7da89f81239b9c94',1464234081) [ RunTime:0.005381s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2509170522@qq.com' or mobile='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000219s ]
+
+[ 2016-05-26T11:41:21+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004343s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2509170522@qq.com' or mobile='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000301s ]
+
+[ 2016-05-26T11:41:21+08:00 ] 192.168.1.18 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001313s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004463s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000292s ]
+
+[ 2016-05-26T11:43:35+08:00 ] 192.168.1.89 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.014046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.014422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013249s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.010184s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000364s ]
+
+[ 2016-05-26T11:43:35+08:00 ] 192.168.1.89 /dzqc_ucenter//User/chgUserState
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000956s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005524s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( `id` =68 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: UPDATE `dzqc_user` SET `state`=1 WHERE ( `id` =68 ) [ RunTime:0.008101s ]
+
+[ 2016-05-26T11:44:04+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001234s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004650s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2509170522@qq.com' or mobile='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =68 ) [ RunTime:0.000081s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =68 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =68 )
+
+[ 2016-05-26T13:16:58+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001984s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003492s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008109s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.come' ) LIMIT 1   [ RunTime:0.001235s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T13:16:58+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001197s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005773s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='279517360@qq.come' ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'279517360@qq.come','279517360@qq.come','fdca3fd8cd6fa64fa26427684b3b5f2a',1464239818) [ RunTime:0.003780s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.come' or mobile='279517360@qq.come' ) LIMIT 1   [ RunTime:0.000413s ]
+
+[ 2016-05-26T13:16:58+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001097s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.012726s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.come' or mobile='279517360@qq.come' ) LIMIT 1   [ RunTime:0.000447s ]
+
+[ 2016-05-26T13:16:58+08:00 ] 192.168.1.18 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004762s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.come' ) LIMIT 1   [ RunTime:0.000468s ]
+
+[ 2016-05-26T13:16:59+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004974s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.008912s ]
+
+[ 2016-05-26T13:17:33+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkMobileExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004330s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003711s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007284s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( mobile='15538283972' ) LIMIT 1   [ RunTime:0.000487s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 118 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T13:17:33+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByMobile
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002109s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008759s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( mobile='15538283972' ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: INSERT INTO `dzqc_user` (`username`,`mobile`,`password`,`regtime`) VALUES ('YQQJ15538283972','15538283972','7542f67397e9e20b7da89f81239b9c94',1464239853) [ RunTime:0.011884s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000476s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000235s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:17:34+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002751s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002850s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002418s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008431s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000505s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000190s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:17:36+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.011382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011484s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007056s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000546s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000232s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:18:00+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001039s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005186s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.com' or mobile='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000406s ]
+
+[ 2016-05-26T13:19:39+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001615s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004809s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.com' or mobile='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000332s ]
+
+[ 2016-05-26T13:19:39+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005734s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.com' or mobile='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000322s ]
+
+[ 2016-05-26T13:20:57+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000932s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004902s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000334s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:21:10+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004982s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='279517360@qq.com' or mobile='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000333s ]
+
+[ 2016-05-26T13:27:36+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008749s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000450s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:30:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001935s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002004s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005371s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000387s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000099s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:31:26+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005887s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000448s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000187s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:33:08+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006536s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000511s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000331s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:34:44+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001002s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004925s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000328s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T13:34:44+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006311s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'1324102719@qq.com','1324102719@qq.com','fdca3fd8cd6fa64fa26427684b3b5f2a',1464240884) [ RunTime:0.017061s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000513s ]
+
+[ 2016-05-26T13:34:45+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001109s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007027s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.001963s ]
+
+[ 2016-05-26T13:34:45+08:00 ] 192.168.1.18 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001311s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005169s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000337s ]
+
+[ 2016-05-26T13:37:48+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002855s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002542s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005881s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000385s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000151s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:38:16+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005945s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000616s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000147s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:38:37+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001579s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001673s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005659s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000537s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000131s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:39:32+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000925s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004814s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000400s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T13:42:49+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001504s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006141s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000408s ]
+
+[ 2016-05-26T13:43:00+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005740s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000414s ]
+
+[ 2016-05-26T13:45:19+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005661s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000368s ]
+
+[ 2016-05-26T13:45:26+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001492s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005998s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000906s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:45:28+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000948s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005058s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000436s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:45:29+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001403s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001971s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004991s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000361s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:45:55+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001854s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001970s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006601s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000539s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:45:58+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001723s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001854s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009890s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.001164s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:47:08+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001524s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007307s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000892s ]
+
+[ 2016-05-26T13:48:28+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002753s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001897s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006750s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000463s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:48:30+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001519s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007982s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000593s ]
+
+[ 2016-05-26T13:48:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010760s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008639s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000509s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T13:48:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006717s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'2509170522@qq.com','2509170522@qq.com','7542f67397e9e20b7da89f81239b9c94',1464241730) [ RunTime:0.004867s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2509170522@qq.com' or mobile='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000474s ]
+
+[ 2016-05-26T13:48:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006983s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='2509170522@qq.com' or mobile='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000424s ]
+
+[ 2016-05-26T13:48:50+08:00 ] 192.168.1.18 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001287s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007420s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000457s ]
+
+[ 2016-05-26T13:49:11+08:00 ] 192.168.1.89 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007542s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='2509170522@qq.com' ) LIMIT 1   [ RunTime:0.000487s ]
+
+[ 2016-05-26T13:49:11+08:00 ] 192.168.1.89 /dzqc_ucenter//User/chgUserState
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001314s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006653s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( `id` =72 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: UPDATE `dzqc_user` SET `state`=1 WHERE ( `id` =72 ) [ RunTime:0.005614s ]
+
+[ 2016-05-26T13:49:57+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002409s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007168s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000423s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:50:07+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001480s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007074s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000454s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:51:31+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001491s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009096s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='279517360@qq.com' ) LIMIT 1   [ RunTime:0.000770s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T13:52:02+08:00 ] 192.168.1.18 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003233s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007960s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000983s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-26T13:52:02+08:00 ] 192.168.1.18 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001498s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001584s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001389s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009751s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000536s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'1324102719@qq.com','1324102719@qq.com','fdca3fd8cd6fa64fa26427684b3b5f2a',1464241922) [ RunTime:0.012940s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000368s ]
+
+[ 2016-05-26T13:52:02+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001371s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008107s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000583s ]
+
+[ 2016-05-26T13:52:02+08:00 ] 192.168.1.18 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001806s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006916s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000774s ]
+
+[ 2016-05-26T13:52:47+08:00 ] 192.168.1.89 /dzqc_ucenter//User/getByUsername
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002804s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008764s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000809s ]
+
+[ 2016-05-26T13:52:47+08:00 ] 192.168.1.89 /dzqc_ucenter//User/chgUserState
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007805s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( `id` =73 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: UPDATE `dzqc_user` SET `state`=1 WHERE ( `id` =73 ) [ RunTime:0.014111s ]
+
+[ 2016-05-26T13:53:31+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002807s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003026s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008804s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =73 ) [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =73 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =73 )
+
+[ 2016-05-26T14:33:26+08:00 ] 192.168.1.89 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003954s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002068s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008128s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='1324102719@qq.com' or mobile='1324102719@qq.com' ) LIMIT 1   [ RunTime:0.000887s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =73 ) [ RunTime:0.000206s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =73 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =73 )
+
+[ 2016-05-26T14:46:01+08:00 ] 192.168.1.89 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002233s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002312s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007115s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000512s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T15:28:09+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.032048s ]
+INFO: [ route_check ] --END-- [ RunTime:0.032181s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002075s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.011628s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='SZEC15538283972' or mobile='SZEC15538283972' ) LIMIT 1   [ RunTime:0.001840s ]
+
+[ 2016-05-26T15:28:40+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.016860s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='YQQJ15538283972' or mobile='YQQJ15538283972' ) LIMIT 1   [ RunTime:0.000611s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.001556s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T15:35:23+08:00 ] 192.168.1.89 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006725s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007042s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003632s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.017767s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000561s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000214s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T15:46:10+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002894s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004288s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.019080s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000726s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.001683s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T15:49:01+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003810s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004493s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.015219s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='SZEC15538283972' or mobile='SZEC15538283972' ) LIMIT 1   [ RunTime:0.001794s ]
+
+[ 2016-05-26T15:49:35+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004909s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005097s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.011703s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='YQQJ15538283972' or mobile='YQQJ15538283972' ) LIMIT 1   [ RunTime:0.000620s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000196s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T15:49:45+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001947s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002033s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.012875s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='SZEC15538283972' or mobile='SZEC15538283972' ) LIMIT 1   [ RunTime:0.005365s ]
+
+[ 2016-05-26T16:14:45+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003038s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003140s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001813s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.009520s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.003109s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000305s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T16:17:39+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003039s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003179s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002039s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006680s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000113s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T16:25:33+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002532s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002627s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.014239s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000710s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000157s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+
+[ 2016-05-26T16:50:27+08:00 ] 192.168.1.89 /dzqc_ucenter//User/editPassword
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003477s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003589s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007390s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( `id` =72 ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: UPDATE `dzqc_user` SET `password`='7542f67397e9e20b7da89f81239b9c94' WHERE ( `id` =72 ) [ RunTime:0.009016s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 175 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-26T16:58:38+08:00 ] 192.168.1.18 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002947s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003039s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007698s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='15538283972' or mobile='15538283972' ) LIMIT 1   [ RunTime:0.000608s ]
+NOTIC: [8] Undefined variable: set D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed D:\wamp\www\dzqc_ucenter\ThinkPHP\Lib\Core\Db.class.php 第 294 行.
+SQL: UPDATE `dzqc_user` SET  WHERE ( `id` =70 ) [ RunTime:0.000171s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE ( `id` =70 )' at line 1
+ [ SQL语句 ] : UPDATE `dzqc_user` SET  WHERE ( `id` =70 )
+

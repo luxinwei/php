@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding:0;
+}
+ul,li{list-style:none;}
+input,button{border:none;background:none;outline:none;color:#c9c8c8}
+img{border:none;}
+textarea{outline:none;}
+a{outline:none;blr:expression(this.onFocus=this.blur());text-decoration: none;color:#666;}
+a:hover{text-decoration:none;}
+body{
+	font-size: 14px;
+    font-family: "宋体";
+	height:auto;
+	overflow-x:hidden;
+	color:#666;
+}
+em{font-style:normal;}
+.l{float:left}
+.r{float:right}
+.onb{border:1px #09ba08 solid}

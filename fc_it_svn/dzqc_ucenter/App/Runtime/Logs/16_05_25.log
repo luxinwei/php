@@ -1,0 +1,169 @@
+[ 2016-05-25T11:28:24+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002904s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003005s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002092s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.008229s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000445s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-25T11:28:24+08:00 ] 192.168.1.66 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001565s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006527s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'heqiujain@qq.com','heqiujain@qq.com','a8ded4a751655566383c21eed1ee1c42',1464146904) [ RunTime:0.005172s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000299s ]
+
+[ 2016-05-25T11:28:24+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001177s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006076s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000377s ]
+
+[ 2016-05-25T11:45:29+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003192s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003267s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002969s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.007102s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujian@qq.com' or mobile='heqiujian@qq.com' ) LIMIT 1   [ RunTime:0.000414s ]
+
+[ 2016-05-25T11:47:32+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002680s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006756s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000390s ]
+
+[ 2016-05-25T11:48:00+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003838s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003936s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006642s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000690s ]
+
+[ 2016-05-25T13:21:29+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002312s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005996s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='heqiujain@qq.com' or mobile='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000423s ]
+
+[ 2016-05-25T14:57:51+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002149s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002226s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.010102s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='13700859247' or mobile='13700859247' ) LIMIT 1   [ RunTime:0.000422s ]
+
+[ 2016-05-25T16:09:02+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002265s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002027s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006661s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000603s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-25T16:10:56+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002975s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003056s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002399s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006700s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='heqiujain@qq.com' ) LIMIT 1   [ RunTime:0.000488s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-25T16:13:38+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002630s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002708s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006129s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='123@qq.com' ) LIMIT 1   [ RunTime:0.000498s ]
+NOTIC: [2] Missing argument 1 for QAction::q_success(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 126 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 44 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 46 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 48 行.
+
+[ 2016-05-25T16:13:52+08:00 ] 192.168.1.66 /dzqc_ucenter//User/chkUsernameExist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001576s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.004249s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( username='qiujian1@qq.com' ) LIMIT 1   [ RunTime:0.000360s ]
+NOTIC: [2] Missing argument 1 for QAction::q_error(), called in D:\wamp\www\dzqc_ucenter\App\Lib\Action\UserAction.class.php on line 128 and defined D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 68 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 70 行.
+NOTIC: [8] Undefined variable: mix_data D:\wamp\www\dzqc_ucenter\App\Lib\Core\QAction.class.php 第 72 行.
+
+[ 2016-05-25T16:13:52+08:00 ] 192.168.1.66 /dzqc_ucenter//User/regByEmail
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.005837s ]
+SQL: SELECT * FROM `dzqc_user` WHERE ( email='qiujian1@qq.com' ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: INSERT INTO `dzqc_user` (`state`,`username`,`email`,`password`,`regtime`) VALUES (0,'qiujian1@qq.com','qiujian1@qq.com','a8ded4a751655566383c21eed1ee1c42',1464164032) [ RunTime:0.009905s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='qiujian1@qq.com' or mobile='qiujian1@qq.com' ) LIMIT 1   [ RunTime:0.000283s ]
+
+[ 2016-05-25T16:13:52+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001958s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002035s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006249s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='qiujian1@qq.com' or mobile='qiujian1@qq.com' ) LIMIT 1   [ RunTime:0.000404s ]
+
+[ 2016-05-25T16:35:02+08:00 ] 192.168.1.66 /dzqc_ucenter//User/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002673s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `dzqc_user` [ RunTime:0.006359s ]
+SQL: SELECT * FROM `dzqc_user` WHERE (  username='qiujian1@qq.com' or mobile='qiujian1@qq.com' ) LIMIT 1   [ RunTime:0.000493s ]
+

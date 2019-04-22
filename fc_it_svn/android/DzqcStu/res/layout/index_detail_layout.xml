@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        layout="@layout/register_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvJobType"
+                    style="@style/tvComLogoFontStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/tv_bord_blue"
+                    android:padding="2dp"
+                    android:text="@string/index_title_pull_sign" />
+
+                <TextView
+                    android:id="@+id/tv_job_position"
+                    style="@style/tvComHeaderStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="丹尼斯柜台临时促销员" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                layout="@layout/line_view_light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pullJob_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_full_payMoney"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="500-1000元" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/GRB10" />
+
+                <TextView
+                    android:id="@+id/tv_full_need_person"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center_vertical"
+                    android:text="招聘16人" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/li_partJob_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_part_payMoney"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="500元/天" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:background="@color/GRB10" />
+
+                <TextView
+                    android:id="@+id/tv_part_need_person"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="招聘12人" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:background="@color/GRB10" />
+
+                <TextView
+                    android:id="@+id/tv_part_long"
+                    style="@style/tvMoneyStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="7天" />
+            </LinearLayout>
+
+            <include layout="@layout/line_view_light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tvMoneyStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/work_publish_person" />
+
+                    <TextView
+                        android:id="@+id/tv_publish_Owner"
+                        style="@style/tvPublistNameStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="郑州宇通客车股份有限公司" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tvPublistContentStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/work_publish_date" />
+
+                    <TextView
+                        android:id="@+id/tv_pub_date"
+                        style="@style/tvPublistContentStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="2016-4-23" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content_title"
+                    style="@style/tvPublistContentStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/work_publish_introduction" />
+
+                <!-- 后台动态添加部分 -->
+
+                <LinearLayout
+                    android:id="@+id/li_publish_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_JobContent"
+                        style="@style/tvPublistContentStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:text="1,参与架构设计" />
+                </LinearLayout>
+
+               <TextView
+                        android:id="@+id/tv_see_all"
+                        style="@style/tvFontLookMoreStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/btn_click"
+                        android:gravity="center_vertical"
+                        android:text="@string/work_publish_seeAll" 
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+            <include layout="@layout/line_view_light_gray" />
+
+            <TextView
+                android:id="@+id/tv_SubmitResume"
+                style="@style/loginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                 android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/user_login_btn"
+                android:text="@string/index_submit_resume" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
