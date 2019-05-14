@@ -1,0 +1,11 @@
+数组array以json格式输出，是以索引数组排序的，
+而自定义数组uasort排序后索引打乱，需要以array_values将顺序重置。
+
+$tempData = array(); //二维数组
+$finalData = array(); 
+
+uasort($tempData,'compare_arr');
+
+$finalData = array_values($tempData);
+
+这样json输出时才会以自定义排序输出。
